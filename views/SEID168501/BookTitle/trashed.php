@@ -22,6 +22,7 @@
     <script src="../../../resources/bootstrap/js/jquery.js"></script>
     <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../../resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../resources/style.css">
 
 
 </head>
@@ -55,7 +56,32 @@
                         <h2> Trashed List of - Book Title </h2>
                     </div>
                 </div>
+                <div class="col-sm-5">
+                    <div class="w3-panel">
+                        <form>
+                            <input type="text" name="search" placeholder="Search..">
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label> By Title</label>
+                            <input class="w3-check" type="checkbox">
+                            <label> By Author</label>
+                        </form>
+                    </div>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col-sm-10"></div>
+                <div class="col-lg-2">
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button w3-brown">Download</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-border">
+                            <a href="#" class="w3-bar-item w3-button">Download PDF</a>
+                            <a href="#" class="w3-bar-item w3-button">Download Excel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="row">
                 <div class="col-sm-12">
@@ -96,7 +122,7 @@
                                                         </button>
                                                     </a>
                                                 <a href='delete.php?id=$row->id'>
-                                                        <button onclick='alert('I am an alert box');'  class='w3-btn w3-red w3-hover-red' >
+                                                        <button onclick='return confirm_delete()'  class='w3-btn w3-red w3-hover-red' >
                                                             Delete
                                                         </button>
                                                     </a>
@@ -110,8 +136,24 @@
                         </table>
                     </div>
             </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <br><br><br>
         </div>
-
 
     <script src="../../../resources/bootstrap/js/jquery.js"></script>
 
@@ -130,6 +172,12 @@
                 $('#message').fadeOut (550);
             }
         )
+    </script>
+
+    <script type="text/javascript">
+        function confirm_delete(){
+            return confirm('Are you sure to Delete?');
+        }
     </script>
 
 

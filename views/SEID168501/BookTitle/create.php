@@ -27,6 +27,7 @@
             background-color: ghostwhite;
             border-radius: 10px;
         }
+
     </style>
 </head>
 <body>
@@ -43,7 +44,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-3" for="authorName">Profile Picture:</label>
+            <label class="control-label col-sm-3" for="authorName">Author Name:</label>
             <div class="col-sm-9">
                 <input type="text" class="form-control" id="authorName" placeholder="Enter Profile Picture" name="authorName">
             </div>

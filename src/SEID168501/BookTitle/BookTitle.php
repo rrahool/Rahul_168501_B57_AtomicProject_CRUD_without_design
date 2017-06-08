@@ -144,6 +144,23 @@ class BookTitle extends Database
 
         } // end of recover()
 
+    public function delete(){
+        $query = "DELETE FROM `tbl_book_title` WHERE `id` = $this->id;";
+
+        //Utility::dd($query);
+
+        $result = $this->DBH->exec($query);
+
+        if($result){
+            Message::message("Success :) Data Deleted Successfully.");
+        }
+        else{
+            Message::message("Failure :( Data Not Deleted!");
+        }
+
+
+    } // end of delete()
+
 
 
 

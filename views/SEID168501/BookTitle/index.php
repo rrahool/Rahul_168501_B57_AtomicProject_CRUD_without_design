@@ -23,6 +23,7 @@
     <script src="../../../resources/bootstrap/js/jquery.js"></script>
     <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../../resources/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../resources/style.css">
 
 </head>
 <body style="background-color: #E9EBEE">
@@ -54,11 +55,35 @@
                         <h2> Active List of - Book Title </h2>
                     </div>
                 </div>
+                <div class="col-sm-5">
+                    <div class="w3-panel">
+                        <form>
+                            <input type="text" name="search" placeholder="Search..">
+                            <input class="w3-check" type="checkbox" checked="checked">
+                            <label> By Title</label>
+                            <input class="w3-check" type="checkbox">
+                            <label> By Author</label>
+                        </form>
+                    </div>
+                </div>
+
             </div>
 
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10">
+                <div class="col-sm-10"></div>
+                <div class="col-lg-2">
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button w3-brown">Download</button>
+                        <div class="w3-dropdown-content w3-bar-block w3-border">
+                            <a href="#" class="w3-bar-item w3-button">Download PDF</a>
+                            <a href="#" class="w3-bar-item w3-button">Download Excel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
 
                         <table class="table-bordered w3-table-all w3-hoverable">
                             <thead>
@@ -66,7 +91,7 @@
                                 <th>Serial</th>
                                 <th>ID</th>
                                 <th>Book Title</th>
-                                <th>Profile Picture</th>
+                                <th>Author Name</th>
                                 <th width="35%">Action Buttons</th>
                             </tr>
                             </thead>
@@ -81,7 +106,7 @@
                                             <td>$row->author_name</td>
                                             <td>
                                                 <a href='view.php?id=$row->id'>
-                                                    <button class='w3-btn w3-blue w3-hover-teal'>
+                                                    <button class='w3-btn w3-blue w3-hover-blue'>
                                                         View
                                                     </button>
                                                 </a>
@@ -109,8 +134,24 @@
                             ?>
                         </table>
                     </div>
-                <div class="col-sm-1"></div>
             </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <br><br><br>
         </div>
 
 
