@@ -48,7 +48,7 @@
                                 <th>Serial</th>
                                 <th width="8%">ID</th>
                                 <th>Name</th>
-                                <th>Profile Picture</th>
+                                <th width="20%">Profile Picture</th>
                                 <th width="20%">Action Buttons</th>
                             </tr>
                             </thead>
@@ -60,7 +60,7 @@
                                             <td>$serial</td>
                                             <td>$row->id</td>
                                             <td>$row->name</td>
-                                            <td>$row->profile_picture</td>
+                                            <td><img src='Images/$row->profile_picture' height='50px;' width='50px;'> </td>
                                             <td>
                                                 <a href='view.php?id=$row->id'>
                                                     <button class='w3-button w3-white w3-border w3-border-green w3-round-medium'>

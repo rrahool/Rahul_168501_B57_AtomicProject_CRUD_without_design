@@ -53,24 +53,20 @@
 
                 <div class="form-group">
                     <label class="control-label col-sm-3" for="name">Name:</label>
-                    <div class="col-sm-9">
+                    <div class="col-sm-6">
                         <input type="text" class="form-control" id="name" name="name" value="<?php echo $singleData->name ?>">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label col-sm-3" for="image">Current Profile Picture:</label>
-                    <div class="col-sm-9">
-                        <input type="text" class="form-control" id="image" name="image" value="<?php echo $singleData->profile_picture ?>">
-                    </div>
-                </div>
-
-                <div class="form-group">
                     <label class="control-label col-sm-3" for="image">Change Picture:</label>
-                    <div class="col-sm-9">
-                        <input type="file" class="form-control" id="image" name="image" accept=".png, .jpg, .jpeg">
+                    <div class="col-sm-6">
+                            <input type="file" class="form-control" id="image" name="image" accept=".png, .jpg, .jpeg">
+
                     </div>
                 </div>
+                <br>
+                <img src="Images/<?php echo $singleData->profile_picture ?>" height="150px;" width="150px;">
 
                 <div class="form-group">
                     <div class="col-sm-offset-3 col-sm-9">

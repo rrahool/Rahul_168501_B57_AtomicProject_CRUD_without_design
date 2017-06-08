@@ -7,6 +7,11 @@ use App\Utility\Utility;
 
 $obj = new Hobbies();
 
+
+$strHobbies = implode(", ", $_POST['Hobbies']);
+
+$_POST['hobbies'] = $strHobbies;
+
 $obj->setData($_POST);
 
 $obj->update();

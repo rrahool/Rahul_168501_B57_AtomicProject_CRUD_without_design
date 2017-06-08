@@ -18,6 +18,8 @@ $_POST['profilePicture'] = $fileName;
 
 $obj->setData($_POST);
 
+//Utility::dd($_POST);
+
 $obj->store();
 
 Utility::redirect("create.php");

@@ -55,7 +55,7 @@ class BookTitle extends Database
 
     public function index(){
 
-        $query = "SELECT * FROM `tbl_book_title`";
+        $query = "SELECT * FROM `tbl_book_title` WHERE is_trashed = 'No'";
 
         $STH = $this->DBH->query($query);
 
@@ -95,6 +95,56 @@ class BookTitle extends Database
             Message::message("Failure :( Data Not Updated!");
         }
     } // end of update()
+
+
+    public function trash(){
+        $query = "UPDATE `tbl_book_title` SET is_trashed = NOW() WHERE `id` = $this->id;";
+
+        //Utility::dd($query);
+
+        $result = $this->DBH->exec($query);
+
+        if($result){
+            Message::message("Success :) Data Trashed Successfully.");
+        }
+        else{
+            Message::message("Failure :( Data Not Trashed!");
+        }
+
+    } // end of trash()
+
+
+    public function trashed(){
+
+        $query = "SELECT * FROM `tbl_book_title` WHERE is_trashed <> 'No'";
+
+        $STH = $this->DBH->query($query);
+
+        $STH->setFetchMode(PDO::FETCH_OBJ);
+        $allData = $STH->fetchAll();
+        return $allData;
+
+    } // end of trashed()
+
+
+
+    public function recover(){
+            $query = "UPDATE `tbl_book_title` SET is_trashed = 'No' WHERE `id` = $this->id;";
+
+            //Utility::dd($query);
+
+            $result = $this->DBH->exec($query);
+
+            if($result){
+                Message::message("Success :) Data Recovered Successfully.");
+            }
+            else{
+                Message::message("Failure :( Data Not Recovered!");
+            }
+
+        } // end of recover()
+
+
 
 
 

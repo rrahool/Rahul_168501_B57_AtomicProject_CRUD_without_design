@@ -62,8 +62,8 @@
                     <label class="control-label col-sm-3" for="gender">Gender: </label>
                     <div class="col-sm-9">
                         <div style="height: 7px"></div>
-                        <input type="radio" name="gender" value="<?php if($singleData->gender == "Male") echo "checked" ?>"> Male
-                        <input type="radio" name="gender" value="<?php if($singleData->gender == "Female") echo "checked" ?>"> Female
+                        <input type="radio" name="gender" value="Male" <?php if($singleData->gender == "Male") echo 'checked = "checked"' ?>> Male
+                        <input type="radio" name="gender" value="Female" <?php if($singleData->gender == "Female") echo 'checked = "checked"' ?>> Female
                     </div>
                 </div>
 
