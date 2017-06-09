@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ee90fc1-a166-4615-8c06-013ecc54850a" name="Default" comment="" />
+    <list default="true" id="5ee90fc1-a166-4615-8c06-013ecc54850a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Rahul_168501_B57_AtomicProject_CRUD_without_design.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/HELP-US-OUT.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_animated.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_bordered-pulled.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_fixed-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_larger.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_rotated-flipped.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_screen-reader.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_stacked.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/font-awesome-4.7.0/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/SEID168501/BookTitle/recover.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/SEID168501/BookTitle/trash.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/SEID168501/BookTitle/trashed.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php" afterPath="$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/BookTitle/index.php" afterPath="$PROJECT_DIR$/views/SEID168501/BookTitle/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/Gender/edit.php" afterPath="$PROJECT_DIR$/views/SEID168501/Gender/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/Hobbies/update.php" afterPath="$PROJECT_DIR$/views/SEID168501/Hobbies/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/edit.php" afterPath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/edit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/index.php" afterPath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/store.php" afterPath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/store.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/update.php" afterPath="$PROJECT_DIR$/views/SEID168501/ProfilePicture/update.php" />
+    </list>
     <ignored path="Rahul_168501_B57_S24.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -21,13 +77,98 @@
     <favorites_list name="Rahul_168501_B57_S24" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15260324">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48114902">
+              <caret line="98" column="133" selection-start-line="98" selection-start-column="133" selection-end-line="98" selection-end-column="133" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1496898120037" expanded="true" signature="3053:4970" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="3366:4520" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="3366:4924" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="3446:3720" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="3544:3667" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="3800:4078" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="3902:4025" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="4159:4468" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="4279:4411" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="4550:4874" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="4684:4817" placeholder="..." />
+                <marker date="1496898120037" expanded="true" signature="5414:5434" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trashed.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/trashed.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.230769">
+              <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="101" />
+              <folding>
+                <marker date="1496897554957" expanded="true" signature="2940:4849" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="3253:4803" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="3333:3607" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="3431:3554" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="3687:3965" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="3789:3912" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="4048:4341" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="4150:4284" placeholder="..." />
+                <marker date="1496897554957" expanded="true" signature="4423:4753" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/font-awesome-4.7.0/css/font-awesome.min.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.9622642">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trash.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/trash.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.3">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding>
+                <element signature="e#53#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recover.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/recover.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.6">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookTitle.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.807692">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding>
+                <marker date="1496889214029" expanded="true" signature="776:848" placeholder="INSERT INTO `tbl_book_title`... " />
+                <marker date="1496889214029" expanded="true" signature="1272:1302" placeholder="SELECT * FRO... tbl_book_title" />
+                <marker date="1496889214029" expanded="true" signature="1272:1326" placeholder="SELECT * FRO... tbl_book_title" />
+                <marker date="1496889214029" expanded="true" signature="1557:1599" placeholder="SELECT * FRO... tbl_book_title" />
+                <marker date="1496889214029" expanded="true" signature="1859:1935" placeholder="UPDATE `tbl_... " />
+                <marker date="1496889214029" expanded="true" signature="2398:2458" placeholder="UPDATE `tbl_... " />
+                <marker date="1496889214029" expanded="true" signature="2814:2869" placeholder="SELECT * FRO... tbl_book_title" />
+                <marker date="1496889214029" expanded="true" signature="3105:3164" placeholder="UPDATE `tbl_... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,18 +188,11 @@
     </commandsHistory>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/store.php" />
-        <option value="$PROJECT_DIR$/src/SEID168501/ProfilePicture/PorfilePicture.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/store.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Gender/store.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/City/store.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Birthday/store.php" />
@@ -66,7 +200,6 @@
         <option value="$PROJECT_DIR$/views/SEID168501/Summary/store.php" />
         <option value="$PROJECT_DIR$/src/SEID168501/ProfilePicture/BookTitle.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/create.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/store.php" />
         <option value="$PROJECT_DIR$/resources/w3css/4/w3.css" />
         <option value="$PROJECT_DIR$/src/SEID168501/Model/Database.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/update.php" />
@@ -74,7 +207,6 @@
         <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/view.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Birthday/create.php" />
         <option value="$PROJECT_DIR$/src/SEID168501/Birthday/Birthday.php" />
-        <option value="$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php" />
         <option value="$PROJECT_DIR$/DB/db_atomic_project.sql" />
         <option value="$PROJECT_DIR$/src/SEID168501/City/City.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/City/view.php" />
@@ -88,8 +220,6 @@
         <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/view.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/index.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/create.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/edit.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/update.php" />
         <option value="$PROJECT_DIR$/src/SEID168501/Hobbies/Hobbies.php" />
         <option value="$PROJECT_DIR$/src/SEID168501/Summary/Summary.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Summary/index.php" />
@@ -98,13 +228,22 @@
         <option value="$PROJECT_DIR$/views/SEID168501/City/create.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/City/edit.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/Gender/create.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/Gender/edit.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/create.php" />
-        <option value="$PROJECT_DIR$/src/SEID168501/ProfilePicture/ProfilePicture.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/view.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/edit.php" />
-        <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/index.php" />
         <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/index.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/store.php" />
+        <option value="$PROJECT_DIR$/src/SEID168501/ProfilePicture/ProfilePicture.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/edit.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/ProfilePicture/update.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/Gender/edit.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/edit.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/Hobbies/update.php" />
+        <option value="$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/trash.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/recover.php" />
+        <option value="$PROJECT_DIR$/resources/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/trashed.php" />
+        <option value="$PROJECT_DIR$/views/SEID168501/BookTitle/index.php" />
       </list>
     </option>
   </component>
@@ -207,6 +346,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rahul_168501_B57_AtomicProject_CRUD_without_design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rahul_168501_B57_AtomicProject_CRUD_without_design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SEID168501" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rahul_168501_B57_AtomicProject_CRUD_without_design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rahul_168501_B57_AtomicProject_CRUD_without_design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SEID168501" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookTitle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -215,18 +394,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Atomic_Project1_B45(SharpCoders45)_without-db" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Rahul_168501_B57_AtomicProject_CRUD_without_design\resources" />
+      <recent name="C:\xampp\htdocs\Rahul_168501_B57_AtomicProject_CRUD_without_design\views\SEID168501\BookTitle" />
       <recent name="C:\xampp\htdocs\Rahul_168501_B57_S24_AtomicProject_CRUD\views\SEID168501\ProfilePicture" />
       <recent name="C:\xampp\htdocs\Rahul_168501_B57_S24_AtomicProject_CRUD\views\SEID168501\Hobbies" />
       <recent name="C:\xampp\htdocs\Rahul_168501_B57_S24_AtomicProject_CRUD\views\SEID168501\Summary" />
-      <recent name="C:\xampp\htdocs\Rahul_168501_B57_S24_AtomicProject_CRUD\views\SEID168501\Gender" />
-      <recent name="C:\xampp\htdocs\Rahul_168501_B57_S24_AtomicProject_CRUD\views\SEID168501\City" />
     </key>
   </component>
   <component name="RunManager">
@@ -276,11 +455,10 @@
     <frame x="-8" y="-8" width="1296" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27427185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21521036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -288,6 +466,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -314,83 +493,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SEID168501/Utility/Utility.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61551726">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/meta.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="357" column="22" selection-start-line="357" selection-start-column="22" selection-end-line="357" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Gender/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46896553">
-          <caret line="17" column="32" selection-start-line="2" selection-start-column="0" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Summary/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029310346">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/w3css/4/w3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3810345">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029310346">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Birthday/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35172415">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Birthday/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3810345">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SEID168501/Birthday/Birthday.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41034484">
-          <caret line="52" column="50" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DB/db_atomic_project.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.23913044">
@@ -461,31 +563,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11724138">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.05862069">
           <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2637931">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7017241">
-          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -510,13 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.118965514">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/SEID168501/Summary/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538">
@@ -524,31 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Summary/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35517243">
-          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.048275862">
-          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/SEID168501/City/store.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3224138">
           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SEID168501/Hobbies/Hobbies.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69310343">
-          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -573,45 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/store.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43965518">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SEID168501/ProfilePicture/ProfilePicture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0844828">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73275864">
           <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54137933">
-          <caret line="51" column="106" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6189655">
-          <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -636,20 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/Gender/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.030520646">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="49" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/create.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15439856">
@@ -661,15 +665,283 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18312387">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36624774">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#53#81#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12567325">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding>
+            <marker date="1496410086000" expanded="true" signature="1327:1864" placeholder="..." />
+            <marker date="1496410086000" expanded="true" signature="1382:1834" placeholder="..." />
+            <marker date="1496410086000" expanded="false" signature="1505:1531" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12208258">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.923077">
+          <caret line="62" column="64" selection-start-line="62" selection-start-column="64" selection-end-line="62" selection-end-column="64" />
+          <folding>
+            <marker date="1496864202210" expanded="true" signature="1893:3120" placeholder="..." />
+            <marker date="1496864202210" expanded="true" signature="2253:3074" placeholder="..." />
+            <marker date="1496864202210" expanded="true" signature="2333:2639" placeholder="..." />
+            <marker date="1496864202210" expanded="true" signature="2463:2586" placeholder="..." />
+            <marker date="1496864202210" expanded="true" signature="2719:3024" placeholder="..." />
+            <marker date="1496864202210" expanded="true" signature="2848:2971" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3967684">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <folding>
+            <element signature="e#53#91#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-33.346153">
+          <caret line="51" column="77" selection-start-line="51" selection-start-column="77" selection-end-line="51" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SEID168501/ProfilePicture/ProfilePicture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4236984">
+          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding>
+            <element signature="e#135#159#0#PHP" expanded="true" />
+            <marker date="1496881192053" expanded="true" signature="782:858" placeholder="INSERT INTO `tbl_profile_pictures`... " />
+            <marker date="1496881192053" expanded="true" signature="1295:1331" placeholder="SELECT * FRO... tbl_profile_pictures" />
+            <marker date="1496881192053" expanded="true" signature="1557:1605" placeholder="SELECT * FRO... tbl_profile_pictures" />
+            <marker date="1496881192053" expanded="true" signature="1845:1925" placeholder="UPDATE `tbl_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48833033">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#53#77#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/ProfilePicture/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8617594">
+          <caret line="63" column="90" selection-start-line="63" selection-start-column="85" selection-end-line="63" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Gender/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18312387">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Gender/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36624774">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Gender/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70197487">
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+          <folding>
+            <marker date="1496883863228" expanded="true" signature="2535:2730" placeholder="..." />
+            <marker date="1496883863228" expanded="true" signature="2594:2707" placeholder="..." />
+            <marker date="1496883863228" expanded="true" signature="2942:2962" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7360862">
+          <caret line="51" column="28" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SEID168501/Hobbies/Hobbies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.846153">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+          <folding>
+            <marker date="1496437377528" expanded="true" signature="741:800" placeholder="INSERT INTO `tbl_hobbies`... " />
+            <marker date="1496437377528" expanded="true" signature="1230:1257" placeholder="SELECT * FRO... tbl_hobbies" />
+            <marker date="1496437377528" expanded="true" signature="1483:1522" placeholder="SELECT * FRO... tbl_hobbies" />
+            <marker date="1496437377528" expanded="true" signature="1762:1825" placeholder="UPDATE `tbl_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Hobbies/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Summary/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/Summary/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SEID168501/BookTitle/BookTitle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.807692">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <marker date="1496889214029" expanded="true" signature="776:848" placeholder="INSERT INTO `tbl_book_title`... " />
+            <marker date="1496889214029" expanded="true" signature="1272:1302" placeholder="SELECT * FRO... tbl_book_title" />
+            <marker date="1496889214029" expanded="true" signature="1272:1326" placeholder="SELECT * FRO... tbl_book_title" />
+            <marker date="1496889214029" expanded="true" signature="1557:1599" placeholder="SELECT * FRO... tbl_book_title" />
+            <marker date="1496889214029" expanded="true" signature="1859:1935" placeholder="UPDATE `tbl_... " />
+            <marker date="1496889214029" expanded="true" signature="2398:2458" placeholder="UPDATE `tbl_... " />
+            <marker date="1496889214029" expanded="true" signature="2814:2869" placeholder="SELECT * FRO... tbl_book_title" />
+            <marker date="1496889214029" expanded="true" signature="3105:3164" placeholder="UPDATE `tbl_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/recover.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/font-awesome-4.7.0/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/font-awesome-4.7.0/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9622642">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/trash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.3">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#53#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/trashed.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.230769">
+          <caret line="98" column="64" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="101" />
+          <folding>
+            <marker date="1496897554957" expanded="true" signature="2940:4849" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="3253:4803" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="3333:3607" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="3431:3554" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="3687:3965" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="3789:3912" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="4048:4341" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="4150:4284" placeholder="..." />
+            <marker date="1496897554957" expanded="true" signature="4423:4753" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/SEID168501/BookTitle/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15260324">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.48114902">
+          <caret line="98" column="133" selection-start-line="98" selection-start-column="133" selection-end-line="98" selection-end-column="133" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1496898120037" expanded="true" signature="3053:4970" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="3366:4520" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="3366:4924" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="3446:3720" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="3544:3667" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="3800:4078" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="3902:4025" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="4159:4468" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="4279:4411" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="4550:4874" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="4684:4817" placeholder="..." />
+            <marker date="1496898120037" expanded="true" signature="5414:5434" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

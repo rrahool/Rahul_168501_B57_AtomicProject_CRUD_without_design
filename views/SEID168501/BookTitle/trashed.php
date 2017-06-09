@@ -36,8 +36,8 @@
                 <div class="col-md-5"></div>
                 <div class="col-md-7">
                     <div class="w3-bar w3-border w3-light-grey">
-                        <a href="index.php" class="w3-bar-item w3-button">Book List</a>
-                        <a href="trashed.php" class="w3-bar-item w3-button w3-black">Trash List</a>
+                        <a href="index.php" class="w3-bar-item w3-button" style="text-decoration: none">Book List</a>
+                        <a href="trashed.php" class="w3-bar-item w3-button w3-black" style="text-decoration: none">Trash List</a>
                         <div class="w3-dropdown-hover">
                             <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
                             <div class="w3-dropdown-content w3-bar-block w3-card-4">

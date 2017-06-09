@@ -36,8 +36,8 @@
                 <div class="col-md-5"></div>
                 <div class="col-md-7">
                     <div class="w3-bar w3-border w3-light-grey">
-                        <a href="index.php" class="w3-bar-item w3-button w3-black">Book List</a>
-                        <a href="trashed.php" class="w3-bar-item w3-button">Trash List</a>
+                        <a href="index.php" class="w3-bar-item w3-button w3-black" style="text-decoration: none">Book List</a>
+                        <a href="trashed.php" class="w3-bar-item w3-button" style="text-decoration: none">Trash List</a>
                         <div class="w3-dropdown-hover">
                             <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
                             <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -70,13 +70,16 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-10"></div>
-                <div class="col-lg-2">
+                <div class="col-sm-5"></div>
+                <div class="col-lg-7">
+                    <button class="w3-btn w3-red w3-hover-red">Delete Selected</button>
+                    <button class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white">Trash Selected</button>
+                    <button class="w3-btn w3-indigo w3-hover-indigo">Email This List</button>
                     <div class="w3-dropdown-hover">
-                        <button class="w3-button w3-brown">Download</button>
+                        <button class="w3-btn w3-brown w3-hover-brown">Download <i class="fa fa-caret-down"></i></button>
                         <div class="w3-dropdown-content w3-bar-block w3-border">
-                            <a href="#" class="w3-bar-item w3-button">Download PDF</a>
-                            <a href="#" class="w3-bar-item w3-button">Download Excel</a>
+                            <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As PDF</a>
+                            <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
                         </div>
                     </div>
                 </div>
@@ -88,11 +91,12 @@
                         <table class="table-bordered w3-table-all w3-hoverable">
                             <thead>
                             <tr class="w3-green">
+                                <th>All <input class="checkbox-inline" type="checkbox"></th>
                                 <th>Serial</th>
-                                <th>ID</th>
+                                <th>Book ID</th>
                                 <th>Book Title</th>
-                                <th>Author Name</th>
-                                <th width="35%">Action Buttons</th>
+                                <th>Author</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <?php
@@ -100,6 +104,9 @@
                                 foreach($allData as $row){
                                     echo "
                                         <tr>
+                                            <td>
+                                                <input class='checkbox-inline' type='checkbox'>
+                                            </td>
                                             <td>$serial</td>
                                             <td>$row->id</td>
                                             <td>$row->book_title</td>
@@ -116,13 +123,18 @@
                                                     </button>
                                                 </a>
                                                 <a href='trash.php?id=$row->id'>
-                                                        <button class='w3-btn w3-orange w3-hover-orange w3-text-white'>
+                                                        <button class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
                                                             Trash
                                                         </button>
                                                     </a>
                                                 <a href='delete.php?id=$row->id'>
                                                         <button onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
                                                             Delete
+                                                        </button>
+                                                    </a>
+                                                    <a href='email.php?id=$row->id'>
+                                                        <button class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
+                                                            Email
                                                         </button>
                                                     </a>
                                             </td>
@@ -135,6 +147,15 @@
                         </table>
                     </div>
             </div>
+            <select class="form-control"  name="DataPerPage" id="DataPerPage" onchange="javascript:location.href = this.value;" >
+                <option value="?DataPerPage=3">Showing 3 books per page</option>
+                <option value="?DataPerPage=4">4 books per page</option>
+                <option value="?DataPerPage=5">5 books per page</option>
+                <option value="?DataPerPage=6">6 books per page</option>
+                <option value="?DataPerPage=7">7 books per page</option>
+                <option value="?DataPerPage=8">8 books per page</option>
+                <option value="?DataPerPage=9">9 books per page</option>
+            </select>
             <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
