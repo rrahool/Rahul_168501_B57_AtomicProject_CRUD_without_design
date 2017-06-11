@@ -16,13 +16,13 @@
     <title>Book Title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../resources/w3css/4/w3.css">
     <link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
     <script src="../../../resources/bootstrap/js/jquery.js"></script>
     <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
+
     <style>
-        div.container{
-            margin-top: 150px;
-        }
+
         div.col-lg-6{
             background-color: ghostwhite;
             border-radius: 10px;
@@ -32,7 +32,21 @@
 </head>
 <body>
 
+
 <div class="container">
+
+    <div class="col-md-6"></div>
+    <div class="col-md-6">
+        <div class="w3-bar w3-border w3-light-grey">
+            <a href="create.php" class="w3-bar-item w3-button w3-black" style="text-decoration: none">Add Book</a>
+            <a href="index.php" class="w3-bar-item w3-button" style="text-decoration: none">Book List</a>
+            <a href="trashed.php" class="w3-bar-item w3-button" style="text-decoration: none">Trash List</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="container" style="margin-top: 150px;">
     <div class="col-lg-3"></div>
     <div class="col-lg-6">
     <h2>BookTitle Form</h2>

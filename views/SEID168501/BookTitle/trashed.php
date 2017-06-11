@@ -28,14 +28,21 @@
 </head>
 <body style="background-color: #E9EBEE">
 
-    <?php echo "<div>  <div id='message'>  $msg </div>   </div>"; ?>
-
-
         <div class="container">
             <div class="row">
-                <div class="col-md-5"></div>
+                <div class="col-md-4">
+                    <?php
+                    echo "<div style='background-color: lightskyblue; border-radius: 5%; font-family: Comic Sans MS;'>
+                                <div id='message' class='text-center'>
+                                  <strong> $msg </strong>
+                                </div>
+                           </div>";
+                    ?>
+                </div>
+                <div class="col-md-1"></div>
                 <div class="col-md-7">
                     <div class="w3-bar w3-border w3-light-grey">
+                        <a href="create.php" class="w3-bar-item w3-button" style="text-decoration: none">Add Book</a>
                         <a href="index.php" class="w3-bar-item w3-button" style="text-decoration: none">Book List</a>
                         <a href="trashed.php" class="w3-bar-item w3-button w3-black" style="text-decoration: none">Trash List</a>
                         <div class="w3-dropdown-hover">
