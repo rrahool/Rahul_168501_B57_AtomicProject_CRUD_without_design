@@ -258,6 +258,28 @@ class BookTitle extends Database
     }// end of indexPaginator()
 
 
+    public function trashedPaginator($page=1,$itemsPerPage=3){
+
+
+        $start = (($page-1) * $itemsPerPage);
+
+        if($start<0) $start = 0;
+
+
+        $sql = "SELECT * from tbl_book_title WHERE is_trashed <> 'No'  LIMIT $start,$itemsPerPage";
+
+
+        $STH = $this->DBH->query($sql);
+
+        $STH->setFetchMode(PDO::FETCH_OBJ);
+
+        $arrSomeData  = $STH->fetchAll();
+        return $arrSomeData;
+
+
+    }// end of trashedPaginator()
+
+
 
 
 } //end of BookTitle Class

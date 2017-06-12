@@ -10,6 +10,35 @@
     $allData = $obj->trashed();
 
     $msg = Message::message();
+
+    ######################## pagination code block#1 of 2 start ######################################
+    $recordCount= count($allData);
+
+
+    if(isset($_REQUEST['Page']))   $page = $_REQUEST['Page'];
+    else if(isset($_SESSION['Page']))   $page = $_SESSION['Page'];
+    else   $page = 1;
+    $_SESSION['Page']= $page;
+
+
+    if(isset($_REQUEST['ItemsPerPage']))   $itemsPerPage = $_REQUEST['ItemsPerPage'];
+    else if(isset($_SESSION['ItemsPerPage']))   $itemsPerPage = $_SESSION['ItemsPerPage'];
+    else   $itemsPerPage = 3;
+    $_SESSION['ItemsPerPage']= $itemsPerPage;
+
+
+
+    $pages = ceil($recordCount/$itemsPerPage);
+    $someData = $obj->trashedPaginator($page,$itemsPerPage);
+
+
+
+    $serial = (  ($page-1) * $itemsPerPage ) +1;
+
+
+
+    if($serial<1) $serial=1;
+    ####################### pagination code block#1 of 2 end ###########################################
 ?>
 
 <!doctype html>
@@ -23,6 +52,7 @@
     <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../../resources/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../../resources/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
 </head>
@@ -68,17 +98,6 @@
                         <h2> Trashed List of - Book Title </h2>
                     </div>
                 </div>
-                <div class="col-sm-5">
-                    <div class="w3-panel">
-                        <form>
-                            <input type="text" name="search" placeholder="Search..">
-                            <input class="w3-check" type="checkbox" checked="checked">
-                            <label> By Title</label>
-                            <input class="w3-check" type="checkbox">
-                            <label> By Author</label>
-                        </form>
-                    </div>
-                </div>
             </div>
 
             <form id="selectionForm" action="recover_multiple.php" method="post">
@@ -91,6 +110,7 @@
 
                         <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
                         <input type="submit" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Recover Multiple">
+
                         <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
 
                         <div class="w3-dropdown-hover">
@@ -117,12 +137,11 @@
                                     <th>ID</th>
                                     <th>Book Title</th>
                                     <th>Profile Picture</th>
-                                    <th width="35%">Action Buttons</th>
+                                    <th>Action Buttons</th>
                                 </tr>
                                 </thead>
                                 <?php
-                                    $serial = 1;
-                                    foreach($allData as $row){
+                                    foreach($someData as $row){
                                         echo "
                                             <tr>
                                                 <td>
@@ -134,25 +153,25 @@
                                                 <td>$row->author_name</td>
                                                 <td>
                                                     <a href='view.php?id=$row->id'>
-                                                        <button class='w3-btn w3-blue w3-hover-blue'>
-                                                            View
+                                                        <button class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
+                                                            <span class='glyphicon glyphicon-eye-open'></span>
                                                         </button>
                                                     </a>
                                                     <a href='edit.php?id=$row->id'>
                                                         <button class='w3-btn w3-indigo w3-hover-indigo'>
-                                                            Edit
+                                                            <i class='material-icons'>edit</i>
                                                         </button>
                                                     </a>
                                                     <a href='recover.php?id=$row->id'>
                                                             <button class='w3-btn w3-teal w3-hover-teal'>
-                                                                Recover
+                                                                <i class='material-icons'>restore</i>
                                                             </button>
                                                         </a>
                                                     <a href='delete.php?id=$row->id'>
                                                             <button onclick='return confirm_delete()'  class='w3-btn w3-red w3-hover-red' >
-                                                                Delete
+                                                                <i class='material-icons'>content_cut</i>
                                                             </button>
-                                                        </a>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         ";
@@ -164,25 +183,72 @@
                         </div>
                 </div>
             </form>
-            <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4">
-                    <div class="pagination">
-                        <a href="#">&laquo;</a>
-                        <a href="#">1</a>
-                        <a class="active" href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">&raquo;</a>
-                    </div>
-                </div>
-                <div class="col-lg-4"></div>
-            </div>
-            <br><br><br>
-        </div>
 
+
+
+            <!--  ######################## pagination code block#2 of 2 start ###################################### -->
+
+            <div class="row">
+                <div class="col-lg-9"></div>
+                <div class="col-lg-3">
+                    <select class="form-control"  name="ItemsPerPage" id="ItemsPerPage" onchange="javascript:location.href = this.value;" >
+                        <?php
+                        if($itemsPerPage==3 ) echo '<option value="?ItemsPerPage=3" selected >Show 3 Items Per Page</option>';
+                        else echo '<option  value="?ItemsPerPage=3">Show 3 Items Per Page</option>';
+
+                        if($itemsPerPage==4 )  echo '<option  value="?ItemsPerPage=4" selected >Show 4 Items Per Page</option>';
+                        else  echo '<option  value="?ItemsPerPage=4">Show 4 Items Per Page</option>';
+
+                        if($itemsPerPage==5 )  echo '<option  value="?ItemsPerPage=5" selected >Show 5 Items Per Page</option>';
+                        else echo '<option  value="?ItemsPerPage=5">Show 5 Items Per Page</option>';
+
+                        if($itemsPerPage==6 )  echo '<option  value="?ItemsPerPage=6"selected >Show 6 Items Per Page</option>';
+                        else echo '<option  value="?ItemsPerPage=6">Show 6 Items Per Page</option>';
+
+                        if($itemsPerPage==10 )   echo '<option  value="?ItemsPerPage=10"selected >Show 10 Items Per Page</option>';
+                        else echo '<option  value="?ItemsPerPage=10">Show 10 Items Per Page</option>';
+
+                        if($itemsPerPage==15 )  echo '<option  value="?ItemsPerPage=15"selected >Show 15 Items Per Page</option>';
+                        else    echo '<option  value="?ItemsPerPage=15">Show 15 Items Per Page</option>';
+                        ?>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row" align="center">
+
+                <div class="pagination">
+                    <?php
+
+                    $pageMinusOne  = $page-1;
+                    $pagePlusOne  = $page+1;
+
+                    if($page>$pages)
+                        Utility::redirect("trashed.php?Page=$pages");
+
+                    if($page>1)
+                        echo "<a href='trashed.php?Page=$pageMinusOne'>" . "&laquo;" . "</a>";
+
+
+                    for($i=1;$i<=$pages;$i++)
+                    {
+                        if($i==$page) echo '<a href="" class="active">'. $i . '</a>';
+                        else  echo "<a href='?Page=$i'>". $i . '</a>';
+
+                    }
+                    if($page<$pages)
+                        echo "<a href='trashed.php?Page=$pagePlusOne'>" . "&raquo;" . "</a>";
+
+                    ?>
+
+                </div>
+
+            </div>
+
+            <!--  ######################## pagination code block#2 of 2 end ###################################### -->
+
+        </div>
 
         <script>
 

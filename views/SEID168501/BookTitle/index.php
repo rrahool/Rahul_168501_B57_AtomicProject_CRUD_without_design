@@ -81,6 +81,7 @@
         <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="../../../resources/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../../../resources/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
         <!-- required for search, block3 of 5 start -->
 
@@ -167,6 +168,7 @@
 
                             <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
                             <input type="submit" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Trash Multiple">
+
                             <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
 
                             <div class="w3-dropdown-hover">
@@ -176,6 +178,7 @@
                                     <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
                                 </div>
                             </div>
+
 
                         </div>
 
@@ -187,7 +190,7 @@
                                 <table class="table-bordered w3-table-all w3-hoverable">
                                     <thead>
                                     <tr class="w3-green">
-                                        <th>All <input type="checkbox" id="select_all"></th>
+                                        <th>All <input type="checkbox" name="select_all" id="select_all"></th>
                                         <th>Serial</th>
                                         <th>Book ID</th>
                                         <th>Book Title</th>
@@ -196,8 +199,7 @@
                                     </tr>
                                     </thead>
                                     <?php
-                                        $serial = 1;
-                                        foreach($allData as $row){
+                                        foreach($someData as $row){
                                             echo "
                                                 <tr>
                                                     <td>
@@ -209,28 +211,28 @@
                                                     <td>$row->author_name</td>
                                                     <td>
                                                         <a href='view.php?id=$row->id'>
-                                                            <button class='w3-btn w3-blue w3-hover-blue'>
-                                                                View
+                                                            <button class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
+                                                                <span class='glyphicon glyphicon-eye-open'></span>
                                                             </button>
                                                         </a>
                                                         <a href='edit.php?id=$row->id'>
                                                             <button class='w3-btn w3-indigo w3-hover-indigo'>
-                                                                Edit
+                                                                <i class='material-icons'>edit</i>
                                                             </button>
                                                         </a>
                                                         <a href='trash.php?id=$row->id'>
                                                                 <button class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
-                                                                    Trash
+                                                                    <i class='material-icons'>delete_forever</i>
                                                                 </button>
                                                             </a>
                                                         <a href='delete.php?id=$row->id'>
                                                                 <button onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
-                                                                    Delete
+                                                                    <i class='material-icons'>content_cut</i>
                                                                 </button>
                                                             </a>
                                                             <a href='email.php?id=$row->id'>
                                                                 <button class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
-                                                                    Email
+                                                                    <i class='material-icons'>mail</i>
                                                                 </button>
                                                             </a>
                                                     </td>
@@ -246,71 +248,12 @@
                </form>
 
 
+        <!--  ######################## pagination code block#2 of 2 start ###################################### -->
 
-                <!--
-                <select class="form-control"  name="DataPerPage" id="DataPerPage" onchange="javascript:location.href = this.value;" >
-                    <option value="?DataPerPage=3">Showing 3 books per page</option>
-                    <option value="?DataPerPage=4">4 books per page</option>
-                    <option value="?DataPerPage=5">5 books per page</option>
-                    <option value="?DataPerPage=6">6 books per page</option>
-                    <option value="?DataPerPage=7">7 books per page</option>
-                    <option value="?DataPerPage=8">8 books per page</option>
-                    <option value="?DataPerPage=9">9 books per page</option>
-                </select>
-
-                <div class="row">
-                    <div class="col-lg-4"></div>
-
-
-                    <div class="col-lg-4">
-                        <div class="pagination">
-                            <a href="#">&laquo;</a>
-                            <a href="#">1</a>
-                            <a class="active" href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">&raquo;</a>
-                        </div>
-                    </div>
-
-
-                    <div class="col-lg-4"></div>
-                </div>
-                <br><br><br>
-                -->
-
-
-
-
-
-            <!--  ######################## pagination code block#2 of 2 start ###################################### -->
-            <div align="left" class="container">
-                <ul class="pagination">
-
-                    <?php
-
-                    $pageMinusOne  = $page-1;
-                    $pagePlusOne  = $page+1;
-
-
-                    if($page>$pages) Utility::redirect("index.php?Page=$pages");
-
-                    if($page>1)  echo "<li><a href='index.php?Page=$pageMinusOne'>" . "Previous" . "</a></li>";
-
-
-                    for($i=1;$i<=$pages;$i++)
-                    {
-                        if($i==$page) echo '<li class="active"><a href="">'. $i . '</a></li>';
-                        else  echo "<li><a href='?Page=$i'>". $i . '</a></li>';
-
-                    }
-                    if($page<$pages) echo "<li><a href='index.php?Page=$pagePlusOne'>" . "Next" . "</a></li>";
-
-                    ?>
-
-                    <select  class="form-control"  name="ItemsPerPage" id="ItemsPerPage" onchange="javascript:location.href = this.value;" >
+            <div class="row">
+                <div class="col-sm-9"></div>
+                <div class="col-lg-3">
+                    <select class="form-control"  name="ItemsPerPage" id="ItemsPerPage" onchange="javascript:location.href = this.value;" >
                         <?php
                         if($itemsPerPage==3 ) echo '<option value="?ItemsPerPage=3" selected >Show 3 Items Per Page</option>';
                         else echo '<option  value="?ItemsPerPage=3">Show 3 Items Per Page</option>';
@@ -331,15 +274,45 @@
                         else    echo '<option  value="?ItemsPerPage=15">Show 15 Items Per Page</option>';
                         ?>
                     </select>
-                </ul>
+                </div>
+
             </div>
-            <!--  ######################## pagination code block#2 of 2 end ###################################### -->
+
+            <div class="row" align="center">
+
+                    <div class="pagination">
+                        <?php
+
+                        $pageMinusOne  = $page-1;
+                        $pagePlusOne  = $page+1;
+
+                        if($page>$pages)
+                            Utility::redirect("index.php?Page=$pages");
+
+                        if($page>1)
+                            echo "<a href='index.php?Page=$pageMinusOne'>" . "&laquo;" . "</a>";
+
+
+                        for($i=1;$i<=$pages;$i++)
+                        {
+                            if($i==$page) echo '<a href="" class="active">'. $i . '</a>';
+                            else  echo "<a href='?Page=$i'>". $i . '</a>';
+
+                        }
+                        if($page<$pages)
+                            echo "<a href='index.php?Page=$pagePlusOne'>" . "&raquo;" . "</a>";
+
+                        ?>
+
+                    </div>
+
+            </div>
+
+        <!--  ######################## pagination code block#2 of 2 end ###################################### -->
 
 
 
-
-
-    </div>
+        </div>
 
             <script>
 

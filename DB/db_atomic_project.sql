@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2017 at 08:04 AM
+-- Generation Time: Jun 12, 2017 at 11:09 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -61,8 +61,6 @@ CREATE TABLE `tbl_book_title` (
 --
 
 INSERT INTO `tbl_book_title` (`id`, `book_title`, `author_name`, `book_image`, `is_trashed`) VALUES
-(2, 'Himu', 'Humayun Ahmed', 'himu_sm.jpg', 'No'),
-(3, 'Shesher Kobita', 'Rabindranath Tagore', 'shesher_kobita.jpg', 'No'),
 (4, 'à¦¹à¦¿à¦®à§ à¦¸à¦®à¦—à§à¦°', 'à¦¹à§à¦®à¦¾à§Ÿà§‚à¦¨ à¦†à¦¹à¦®à§‡à¦¦', 'himu_sm_1.jpg', 'No'),
 (5, 'Roll Number 13', 'Sumanta Aslam', '', 'No'),
 (6, 'Srikanta', 'Nimai Bhattacharjee', '', 'No'),
@@ -72,7 +70,13 @@ INSERT INTO `tbl_book_title` (`id`, `book_title`, `author_name`, `book_image`, `
 (10, 'HabiJabi Series Part1', 'Rahul - Avinanda', '', 'No'),
 (11, 'Adventure of Sherlock Holmes', 'Sir Aurthur Canon Doyle', 'sherlock.jpg', '2017-06-12 11:32:29'),
 (12, 'Feluda', 'Satyajit Rai', '', '2017-06-12 11:31:58'),
-(13, 'kiiiiiiiaskdasjk', 'aiyooooooo', '', 'No');
+(13, 'kiiiiiiiaskdasjk', 'aiyooooooo', '', 'No'),
+(14, 'à¦¦à¦¸à§à¦¯à¦¿ à¦•\'à¦œà¦¨', 'à¦®à§à¦¹à¦®à§à¦®à¦¦ à¦œà¦¾à¦«à¦° à¦‡à¦•à¦¬à¦¾à¦²', '', 'No'),
+(15, 'à¦œà§à¦¯à§‹à§Žà¦¸à§à¦¨à¦¾à§Ÿ à¦¬à¦°à§à¦·à¦¾à¦° à¦®à§‡à¦˜', 'à¦¸à¦®à¦°à§‡à¦¶ à¦®à¦œà§à¦®à¦¦à¦¾à¦°', '', 'No'),
+(16, 'à¦­à¦¾à¦²à§‹à¦¬à¦¾à¦¸à¦¾', 'à¦¶à§€à¦°à§à¦·à§‡à¦¨à§à¦¦à§ à¦®à§à¦–à§‹à¦ªà¦¾à¦§à§à¦¯à¦¾à§Ÿ', '', 'No'),
+(17, 'à¦…à¦ªà§à¦° à¦¸à¦‚à¦¸à¦¾à¦°', 'à¦¸à¦¤à§à¦¯à¦œà¦¿à§Ž à¦°à¦¾à§Ÿ', '', 'No'),
+(18, 'à¦¹à§€à¦°à§‡ à¦¬à¦¸à¦¾à¦¨à§‹ à¦¸à§‹à¦¨à¦¾à¦° à¦«à§à¦²', 'à¦¸à¦®à¦°à§‡à¦¶ à¦®à¦œà§à¦®à¦¦à¦¾à¦°', '', 'No'),
+(20, 'yjdydghx', 'srtsrfr4', '', 'No');
 
 -- --------------------------------------------------------
 
@@ -243,7 +247,7 @@ ALTER TABLE `tbl_birthday`
 -- AUTO_INCREMENT for table `tbl_book_title`
 --
 ALTER TABLE `tbl_book_title`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `tbl_cities`
 --
