@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2017 at 06:39 AM
+-- Generation Time: Jun 12, 2017 at 08:04 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -52,26 +52,27 @@ CREATE TABLE `tbl_book_title` (
   `id` int(11) NOT NULL,
   `book_title` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `author_name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
-  `book_image` varchar(100) COLLATE utf8_unicode_ci NOT NULL
+  `book_image` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `is_trashed` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `tbl_book_title`
 --
 
-INSERT INTO `tbl_book_title` (`id`, `book_title`, `author_name`, `book_image`) VALUES
-(2, 'Himu', 'Humayun Ahmed', 'himu_sm.jpg'),
-(3, 'Shesher Kobita', 'Rabindranath Tagore', 'shesher_kobita.jpg'),
-(4, 'à¦¹à¦¿à¦®à§ à¦¸à¦®à¦—à§à¦°', 'à¦¹à§à¦®à¦¾à§Ÿà§‚à¦¨ à¦†à¦¹à¦®à§‡à¦¦', 'himu_sm_1.jpg'),
-(5, 'Roll Number 13', 'Sumanta Aslam', ''),
-(6, 'Srikanta', 'Nimai Bhattacharjee', ''),
-(7, 'HabiJabi', 'Rahul Biswas', ''),
-(8, 'Shatkahon', 'Shamaresh Mazumder', 'shatkahon.jpg'),
-(9, 'HabiJabi Series', 'Rahul Biswas', ''),
-(10, 'HabiJabi Series Part1', 'Rahul - Avinanda', ''),
-(11, 'Adventure of Sherlock Holmes', 'Sir Aurthur Canon Doyle', 'sherlock.jpg'),
-(12, 'Feluda', 'Satyajit Rai', ''),
-(13, 'kiiiiiiiaskdasjk', 'aiyooooooo', '');
+INSERT INTO `tbl_book_title` (`id`, `book_title`, `author_name`, `book_image`, `is_trashed`) VALUES
+(2, 'Himu', 'Humayun Ahmed', 'himu_sm.jpg', 'No'),
+(3, 'Shesher Kobita', 'Rabindranath Tagore', 'shesher_kobita.jpg', 'No'),
+(4, 'à¦¹à¦¿à¦®à§ à¦¸à¦®à¦—à§à¦°', 'à¦¹à§à¦®à¦¾à§Ÿà§‚à¦¨ à¦†à¦¹à¦®à§‡à¦¦', 'himu_sm_1.jpg', 'No'),
+(5, 'Roll Number 13', 'Sumanta Aslam', '', 'No'),
+(6, 'Srikanta', 'Nimai Bhattacharjee', '', 'No'),
+(7, 'HabiJabi', 'Rahul Biswas', '', 'No'),
+(8, 'Shatkahon', 'Shamaresh Mazumder', 'shatkahon.jpg', '2017-06-12 11:31:51'),
+(9, 'HabiJabi Series', 'Rahul Biswas', '', '2017-06-12 11:32:09'),
+(10, 'HabiJabi Series Part1', 'Rahul - Avinanda', '', 'No'),
+(11, 'Adventure of Sherlock Holmes', 'Sir Aurthur Canon Doyle', 'sherlock.jpg', '2017-06-12 11:32:29'),
+(12, 'Feluda', 'Satyajit Rai', '', '2017-06-12 11:31:58'),
+(13, 'kiiiiiiiaskdasjk', 'aiyooooooo', '', 'No');
 
 -- --------------------------------------------------------
 

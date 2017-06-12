@@ -162,6 +162,100 @@ class BookTitle extends Database
     } // end of delete()
 
 
+    public function search($requestArray){
+        $sql = "";
+        if( isset($requestArray['byTitle']) && isset($requestArray['byAuthor']) )  $sql = "SELECT * FROM `tbl_book_title` WHERE `is_trashed` ='No' AND (`book_title` LIKE '%".$requestArray['search']."%' OR `author_name` LIKE '%".$requestArray['search']."%')";
+        if(isset($requestArray['byTitle']) && !isset($requestArray['byAuthor']) ) $sql = "SELECT * FROM `tbl_book_title` WHERE `is_trashed` ='No' AND `book_title` LIKE '%".$requestArray['search']."%'";
+        if(!isset($requestArray['byTitle']) && isset($requestArray['byAuthor']) )  $sql = "SELECT * FROM `tbl_book_title` WHERE `is_trashed` ='No' AND `author_name` LIKE '%".$requestArray['search']."%'";
+
+        $STH  = $this->DBH->query($sql);
+        $STH->setFetchMode(PDO::FETCH_OBJ);
+        $someData = $STH->fetchAll();
+
+        return $someData;
+
+    }// end of search()
+
+
+    public function getAllKeywords()
+    {
+        $_allKeywords = array();
+        $WordsArr = array();
+
+        $allData = $this->index();
+
+        foreach ($allData as $oneData) {
+            $_allKeywords[] = trim($oneData->book_title);
+        }
+
+
+        foreach ($allData as $oneData) {
+
+            $eachString= strip_tags($oneData->book_title);
+            $eachString=trim( $eachString);
+            $eachString= preg_replace( "/\r|\n/", " ", $eachString);
+            $eachString= str_replace("&nbsp;","",  $eachString);
+
+            $WordsArr = explode(" ", $eachString);
+
+            foreach ($WordsArr as $eachWord){
+                $_allKeywords[] = trim($eachWord);
+            }
+        }
+        // for each search field block end
+
+
+
+
+        // for each search field block start
+        $allData = $this->index();
+
+        foreach ($allData as $oneData) {
+            $_allKeywords[] = trim($oneData->author_name);
+        }
+        $allData = $this->index();
+
+        foreach ($allData as $oneData) {
+
+            $eachString= strip_tags($oneData->author_name);
+            $eachString=trim( $eachString);
+            $eachString= preg_replace( "/\r|\n/", " ", $eachString);
+            $eachString= str_replace("&nbsp;","",  $eachString);
+            $WordsArr = explode(" ", $eachString);
+
+            foreach ($WordsArr as $eachWord){
+                $_allKeywords[] = trim($eachWord);
+            }
+        }
+        // for each search field block end
+
+
+        return array_unique($_allKeywords);
+
+
+    }// end of getAllKeywords()
+
+
+    public function indexPaginator($page=1,$itemsPerPage=3){
+
+
+        $start = (($page-1) * $itemsPerPage);
+
+        if($start<0) $start = 0;
+
+
+        $sql = "SELECT * from tbl_book_title  WHERE is_trashed = 'No' LIMIT $start,$itemsPerPage";
+
+
+        $STH = $this->DBH->query($sql);
+
+        $STH->setFetchMode(PDO::FETCH_OBJ);
+
+        $arrSomeData  = $STH->fetchAll();
+        return $arrSomeData;
+
+
+    }// end of indexPaginator()
 
 
 

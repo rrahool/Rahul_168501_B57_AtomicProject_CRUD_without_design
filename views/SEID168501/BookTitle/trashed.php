@@ -30,7 +30,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
                     <?php
                     echo "<div style='background-color: lightskyblue; border-radius: 5%; font-family: Comic Sans MS;'>
                                 <div id='message' class='text-center'>
@@ -39,7 +40,11 @@
                            </div>";
                     ?>
                 </div>
-                <div class="col-md-1"></div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5"></div>
                 <div class="col-md-7">
                     <div class="w3-bar w3-border w3-light-grey">
                         <a href="create.php" class="w3-bar-item w3-button" style="text-decoration: none">Add Book</a>
@@ -76,73 +81,89 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-sm-10"></div>
-                <div class="col-lg-2">
-                    <div class="w3-dropdown-hover">
-                        <button class="w3-button w3-brown">Download</button>
-                        <div class="w3-dropdown-content w3-bar-block w3-border">
-                            <a href="#" class="w3-bar-item w3-button">Download PDF</a>
-                            <a href="#" class="w3-bar-item w3-button">Download Excel</a>
+            <form id="selectionForm" action="recover_multiple.php" method="post">
+
+                <div class="row">
+
+                    <div class="col-sm-5"></div>
+
+                    <div class="col-lg-7">
+
+                        <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
+                        <input type="submit" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Recover Multiple">
+                        <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
+
+                        <div class="w3-dropdown-hover">
+                            <button type="button" class="w3-btn w3-brown w3-hover-brown">Download <i class="fa fa-download"></i></button>
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As PDF</a>
+                                <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
+                            </div>
                         </div>
+
                     </div>
+
                 </div>
-            </div>
 
 
-            <div class="row">
-                <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12">
 
-                        <table class="table-bordered w3-table-all w3-hoverable">
-                            <thead>
-                            <tr class="w3-green">
-                                <th>Serial</th>
-                                <th>ID</th>
-                                <th>Book Title</th>
-                                <th>Profile Picture</th>
-                                <th width="35%">Action Buttons</th>
-                            </tr>
-                            </thead>
-                            <?php
-                                $serial = 1;
-                                foreach($allData as $row){
-                                    echo "
-                                        <tr>
-                                            <td>$serial</td>
-                                            <td>$row->id</td>
-                                            <td>$row->book_title</td>
-                                            <td>$row->author_name</td>
-                                            <td>
-                                                <a href='view.php?id=$row->id'>
-                                                    <button class='w3-btn w3-blue w3-hover-blue'>
-                                                        View
-                                                    </button>
-                                                </a>
-                                                <a href='edit.php?id=$row->id'>
-                                                    <button class='w3-btn w3-indigo w3-hover-indigo'>
-                                                        Edit
-                                                    </button>
-                                                </a>
-                                                <a href='recover.php?id=$row->id'>
-                                                        <button class='w3-btn w3-teal w3-hover-teal'>
-                                                            Recover
+                            <table class="table-bordered w3-table-all w3-hoverable">
+                                <thead>
+                                <tr class="w3-green">
+                                    <th>All <input type="checkbox" id="select_all"></th>
+                                    <th>Serial</th>
+                                    <th>ID</th>
+                                    <th>Book Title</th>
+                                    <th>Profile Picture</th>
+                                    <th width="35%">Action Buttons</th>
+                                </tr>
+                                </thead>
+                                <?php
+                                    $serial = 1;
+                                    foreach($allData as $row){
+                                        echo "
+                                            <tr>
+                                                <td>
+                                                    <input type='checkbox' class='checkbox' name='selectedIDs[]' value='$row->id'>
+                                                </td>
+                                                <td>$serial</td>
+                                                <td>$row->id</td>
+                                                <td>$row->book_title</td>
+                                                <td>$row->author_name</td>
+                                                <td>
+                                                    <a href='view.php?id=$row->id'>
+                                                        <button class='w3-btn w3-blue w3-hover-blue'>
+                                                            View
                                                         </button>
                                                     </a>
-                                                <a href='delete.php?id=$row->id'>
-                                                        <button onclick='return confirm_delete()'  class='w3-btn w3-red w3-hover-red' >
-                                                            Delete
+                                                    <a href='edit.php?id=$row->id'>
+                                                        <button class='w3-btn w3-indigo w3-hover-indigo'>
+                                                            Edit
                                                         </button>
                                                     </a>
-                                            </td>
-                                        </tr>
-                                    ";
-                                    $serial++;
-                                } //end of foreach loop
+                                                    <a href='recover.php?id=$row->id'>
+                                                            <button class='w3-btn w3-teal w3-hover-teal'>
+                                                                Recover
+                                                            </button>
+                                                        </a>
+                                                    <a href='delete.php?id=$row->id'>
+                                                            <button onclick='return confirm_delete()'  class='w3-btn w3-red w3-hover-red' >
+                                                                Delete
+                                                            </button>
+                                                        </a>
+                                                </td>
+                                            </tr>
+                                        ";
+                                        $serial++;
+                                    } //end of foreach loop
 
-                            ?>
-                        </table>
-                    </div>
-            </div>
+                                ?>
+                            </table>
+                        </div>
+                </div>
+            </form>
             <div class="row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4">
@@ -162,31 +183,75 @@
             <br><br><br>
         </div>
 
-    <script src="../../../resources/bootstrap/js/jquery.js"></script>
 
-    <script>
+        <script>
 
 
-        jQuery(
+            jQuery(
 
-            function($) {
-                $('#message').fadeOut (550);
-                $('#message').fadeIn (550);
-                $('#message').fadeOut (550);
-                $('#message').fadeIn (550);
-                $('#message').fadeOut (550);
-                $('#message').fadeIn (550);
-                $('#message').fadeOut (550);
+                function($) {
+                    $('#message').fadeOut (550);
+                    $('#message').fadeIn (550);
+                    $('#message').fadeOut (550);
+                    $('#message').fadeIn (550);
+                    $('#message').fadeOut (550);
+                    $('#message').fadeIn (550);
+                    $('#message').fadeOut (550);
+                }
+            )
+        </script>
+
+        <script type="text/javascript">
+            function confirm_delete(){
+                return confirm('Are you sure to Delete?');
             }
-        )
-    </script>
+        </script>
 
-    <script type="text/javascript">
-        function confirm_delete(){
-            return confirm('Are you sure to Delete?');
-        }
-    </script>
+        <script>
 
+            //select all checkboxes
+            $("#select_all").change(function(){  //"select all" change
+                var status = this.checked; // "select all" checked status
+                $('.checkbox').each(function(){ //iterate all listed checkbox items
+                    this.checked = status; //change ".checkbox" checked status
+                });
+            });
+
+
+            $('.checkbox').change(function(){ //".checkbox" change
+                //uncheck "select all", if one of the listed checkbox item is unchecked
+                if(this.checked == false){ //if this item is unchecked
+                    $("#select_all")[0].checked = false; //change "select all" checked status to false
+                }
+
+                //check "select all" if all checkbox items are checked
+                if ($('.checkbox:checked').length == $('.checkbox').length ){
+                    $("#select_all")[0].checked = true; //change "select all" checked status to true
+                }
+            });
+        </script>
+
+
+
+        <script>
+
+
+            $("#deleteMultipleButton").click(function(){
+
+
+                var result = confirm("Are you sure you want to delete the selected record(s)?");
+
+                if(result) {
+
+                    var selectionForm = $("#selectionForm");
+                    selectionForm.attr("action", "delete_multiple.php");
+                    selectionForm.submit();
+                }
+            });
+
+
+
+        </script>
 
 
 
