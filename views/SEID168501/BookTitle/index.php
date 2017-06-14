@@ -137,6 +137,8 @@
                         </div>
                     </div>
 
+                    <div class="col-sm-1"></div>
+
                     <!-- required for search, block 4 of 5 start -->
 
                     <div class="col-sm-5">
@@ -167,7 +169,7 @@
                         <div class="col-lg-7">
 
                             <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
-                            <input type="submit" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Trash Multiple">
+                            <input type="button" id="trashMultipleButton" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Trash Multiple">
 
                             <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
 
@@ -186,7 +188,6 @@
 
                     <div class="row">
                         <div class="col-sm-12">
-
                                 <table class="table-bordered w3-table-all w3-hoverable">
                                     <thead>
                                     <tr class="w3-green">
@@ -211,27 +212,27 @@
                                                     <td>$row->author_name</td>
                                                     <td>
                                                         <a href='view.php?id=$row->id'>
-                                                            <button class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
+                                                            <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
                                                                 <span class='glyphicon glyphicon-eye-open'></span>
                                                             </button>
                                                         </a>
                                                         <a href='edit.php?id=$row->id'>
-                                                            <button class='w3-btn w3-indigo w3-hover-indigo'>
+                                                            <button type='button' class='w3-btn w3-indigo w3-hover-indigo'>
                                                                 <i class='material-icons'>edit</i>
                                                             </button>
                                                         </a>
                                                         <a href='trash.php?id=$row->id'>
-                                                                <button class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
+                                                                <button type='button' class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
                                                                     <i class='material-icons'>delete_forever</i>
                                                                 </button>
                                                             </a>
                                                         <a href='delete.php?id=$row->id'>
-                                                                <button onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
+                                                                <button type='button' onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
                                                                     <i class='material-icons'>content_cut</i>
                                                                 </button>
                                                             </a>
                                                             <a href='email.php?id=$row->id'>
-                                                                <button class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
+                                                                <button type='button' class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
                                                                     <i class='material-icons'>mail</i>
                                                                 </button>
                                                             </a>
@@ -316,7 +317,6 @@
 
             <script>
 
-
                 jQuery(
 
                     function($) {
@@ -331,11 +331,15 @@
                 )
             </script>
 
+
+
             <script type="text/javascript">
                 function confirm_delete(){
                     return confirm('Are you sure to Delete?');
                 }
             </script>
+
+
 
             <script>
 
@@ -361,68 +365,106 @@
                 });
             </script>
 
-        <script>
 
 
-            $("#deleteMultipleButton").click(function(){
+            <script>
+
+                $("#deleteMultipleButton").click(function(){
+
+                    if (isEmptySelection()){
+                        alert("Empty Selection! Please select some record(s) first.")
+                    } else {
+                        var result = confirm("Are you sure you want to delete the selected record(s)?");
+
+                        if(result) {
+
+                            var selectionForm = $("#selectionForm");
+                            selectionForm.attr("action", "delete_multiple.php");
+                            selectionForm.submit();
+                        }
+                    }
+
+                });
+
+            </script>
 
 
-                var result = confirm("Are you sure you want to delete the selected record(s)?");
 
-                if(result) {
 
-                    var selectionForm = $("#selectionForm");
-                    selectionForm.attr("action", "delete_multiple.php");
-                    selectionForm.submit();
+            <!-- required for search, block 5 of 5 start -->
+            <script>
+
+                $(function() {
+                    var availableTags = [
+
+                        <?php
+                        echo $comma_separated_keywords;
+                        ?>
+                    ];
+                    // Filter function to search only from the beginning of the string
+                    $( "#searchID" ).autocomplete({
+                        source: function(request, response) {
+
+                            var results = $.ui.autocomplete.filter(availableTags, request.term);
+
+                            results = $.map(availableTags, function (tag) {
+                                if (tag.toUpperCase().indexOf(request.term.toUpperCase()) === 0) {
+                                    return tag;
+                                }
+                            });
+
+                            response(results.slice(0, 15));
+
+                        }
+                    });
+
+
+                    $( "#searchID" ).autocomplete({
+                        select: function(event, ui) {
+                            $("#searchID").val(ui.item.label);
+                            $("#searchForm").submit();
+                        }
+                    });
+
+
+                });
+
+            </script>
+            <!-- required for search, block5 of 5 end -->
+
+
+
+
+            <script>
+
+                function isEmptySelection(){
+
+                    empty = true;
+
+                    $(".checkbox").each(function(){
+
+                        if(this.checked) empty=false;
+                    });
+
+                    return empty;
                 }
-            });
 
 
-        </script>
+                $("#trashMultipleButton").click(function(){
 
-
-
-
-        <!-- required for search, block 5 of 5 start -->
-        <script>
-
-            $(function() {
-                var availableTags = [
-
-                    <?php
-                    echo $comma_separated_keywords;
-                    ?>
-                ];
-                // Filter function to search only from the beginning of the string
-                $( "#searchID" ).autocomplete({
-                    source: function(request, response) {
-
-                        var results = $.ui.autocomplete.filter(availableTags, request.term);
-
-                        results = $.map(availableTags, function (tag) {
-                            if (tag.toUpperCase().indexOf(request.term.toUpperCase()) === 0) {
-                                return tag;
-                            }
-                        });
-
-                        response(results.slice(0, 15));
-
+                    if(isEmptySelection()){
+                        alert("Empty Selection! Please select some record(s) first.");
                     }
+                    else{
+
+                        $("#selectionForm").submit();
+                    }
+
                 });
 
-
-                $( "#searchID" ).autocomplete({
-                    select: function(event, ui) {
-                        $("#searchID").val(ui.item.label);
-                        $("#searchForm").submit();
-                    }
-                });
+            </script>
 
 
-            });
-
-        </script>
-        <!-- required for search, block5 of 5 end -->
 
     </body>
 </html>

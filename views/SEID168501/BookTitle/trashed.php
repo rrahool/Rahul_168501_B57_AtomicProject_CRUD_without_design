@@ -4,6 +4,7 @@
 
     use App\BookTitle\BookTitle;
     use App\Message\Message;
+    use App\Utility\Utility;
 
     $obj = new BookTitle();
 
@@ -109,7 +110,7 @@
                     <div class="col-lg-7">
 
                         <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
-                        <input type="submit" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Recover Multiple">
+                        <input type="button" id="recoverMultipleButton" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Recover Multiple">
 
                         <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
 
@@ -125,19 +126,18 @@
 
                 </div>
 
-
                 <div class="row">
                     <div class="col-sm-12">
 
                             <table class="table-bordered w3-table-all w3-hoverable">
                                 <thead>
                                 <tr class="w3-green">
-                                    <th>All <input type="checkbox" id="select_all"></th>
+                                    <th>All <input type="checkbox" name="select_all" id="select_all"></th>
                                     <th>Serial</th>
-                                    <th>ID</th>
+                                    <th>Book ID</th>
                                     <th>Book Title</th>
-                                    <th>Profile Picture</th>
-                                    <th>Action Buttons</th>
+                                    <th>Author</th>
+                                    <th>Action</th>
                                 </tr>
                                 </thead>
                                 <?php
@@ -153,22 +153,22 @@
                                                 <td>$row->author_name</td>
                                                 <td>
                                                     <a href='view.php?id=$row->id'>
-                                                        <button class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
+                                                        <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
                                                             <span class='glyphicon glyphicon-eye-open'></span>
                                                         </button>
                                                     </a>
                                                     <a href='edit.php?id=$row->id'>
-                                                        <button class='w3-btn w3-indigo w3-hover-indigo'>
+                                                        <button type='button' class='w3-btn w3-indigo w3-hover-indigo'>
                                                             <i class='material-icons'>edit</i>
                                                         </button>
                                                     </a>
                                                     <a href='recover.php?id=$row->id'>
-                                                            <button class='w3-btn w3-teal w3-hover-teal'>
+                                                            <button type='button' class='w3-btn w3-teal w3-hover-teal'>
                                                                 <i class='material-icons'>restore</i>
                                                             </button>
                                                         </a>
                                                     <a href='delete.php?id=$row->id'>
-                                                            <button onclick='return confirm_delete()'  class='w3-btn w3-red w3-hover-red' >
+                                                            <button onclick='return confirm_delete()' type='button' class='w3-btn w3-red w3-hover-red' >
                                                                 <i class='material-icons'>content_cut</i>
                                                             </button>
                                                     </a>
@@ -305,17 +305,53 @@
             $("#deleteMultipleButton").click(function(){
 
 
-                var result = confirm("Are you sure you want to delete the selected record(s)?");
+                if(isEmptySelection()){
+                    alert("Empty Selection! Please select some record(s) first.");
+                } else {
 
-                if(result) {
+                    var result = confirm("Are you sure you want to delete the selected record(s)?");
 
-                    var selectionForm = $("#selectionForm");
-                    selectionForm.attr("action", "delete_multiple.php");
-                    selectionForm.submit();
+                    if (result) {
+
+                        var selectionForm = $("#selectionForm");
+                        selectionForm.attr("action", "delete_multiple.php");
+                        selectionForm.submit();
+                    }
                 }
             });
 
 
+
+        </script>
+
+
+
+        <script>
+
+            function isEmptySelection(){
+
+                empty = true;
+
+                $(".checkbox").each(function(){
+
+                    if(this.checked) empty=false;
+                });
+
+                return empty;
+            }
+
+
+            $("#recoverMultipleButton").click(function(){
+
+                if(isEmptySelection()){
+                    alert("Empty Selection! Please select some record(s) first.");
+                }
+                else{
+
+                    $("#selectionForm").submit();
+                }
+
+            });
 
         </script>
 
