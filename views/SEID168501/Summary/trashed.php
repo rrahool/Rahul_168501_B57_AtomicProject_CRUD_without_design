@@ -2,11 +2,11 @@
 
     require_once "../../../vendor/autoload.php";
 
-    use App\BookTitle\BookTitle;
+    use App\Summary\Summary;
     use App\Message\Message;
     use App\Utility\Utility;
 
-    $obj = new BookTitle();
+    $obj = new Summary();
 
     $allData = $obj->trashed();
 
@@ -46,7 +46,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Book List - All</title>
+    <title>Summary List - All</title>
     <link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../resources/w3css/4/w3.css">
     <script src="../../../resources/bootstrap/js/jquery.js"></script>
@@ -78,8 +78,8 @@
                 <div class="col-md-5"></div>
                 <div class="col-md-7">
                     <div class="w3-bar w3-border w3-light-grey">
-                        <a href="create.php" class="w3-bar-item w3-button" style="text-decoration: none">Add Book</a>
-                        <a href="index.php" class="w3-bar-item w3-button" style="text-decoration: none">Book List</a>
+                        <a href="create.php" class="w3-bar-item w3-button" style="text-decoration: none">Add Summary</a>
+                        <a href="index.php" class="w3-bar-item w3-button" style="text-decoration: none">Summary List</a>
                         <a href="trashed.php" class="w3-bar-item w3-button w3-black" style="text-decoration: none">Trash List</a>
                         <div class="w3-dropdown-hover">
                             <button class="w3-button">More <i class="fa fa-caret-down"></i></button>
@@ -96,7 +96,7 @@
             <div class="row">
                 <div class="col-sm-5">
                     <div class="w3-panel w3-blue w3-card-4">
-                        <h2> Trashed List of - Book Title </h2>
+                        <h2> Trashed List of - Summary </h2>
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                     <div class="col-lg-7">
 
                         <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
-                        <input type="button" id="recoverMultipleButton" class="w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white" value="Recover Multiple">
+                        <input type="button" id="recoverMultipleButton" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Recover Multiple">
 
                         <a href="trashMail.php?list=1" class="w3-btn w3-indigo w3-hover-indigo" style="text-decoration: none">Email This List</a>
 
@@ -134,10 +134,11 @@
                                 <tr class="w3-green">
                                     <th>All <input type="checkbox" name="select_all" id="select_all"></th>
                                     <th>Serial</th>
-                                    <th>Book ID</th>
-                                    <th>Book Title</th>
-                                    <th>Author</th>
-                                    <th>Action</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Organization</th>
+                                    <th width="35%">Summary</th>
+                                    <th>Actions</th>
                                 </tr>
                                 </thead>
                                 <?php
@@ -149,8 +150,9 @@
                                                 </td>
                                                 <td>$serial</td>
                                                 <td>$row->id</td>
-                                                <td>$row->book_title</td>
-                                                <td>$row->author_name</td>
+                                                <td>$row->name</td>
+                                                <td>$row->organization</td>
+                                                <td>$row->summary</td>
                                                 <td>
                                                     <a href='view.php?id=$row->id' title='View'>
                                                         <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>

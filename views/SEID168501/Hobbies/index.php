@@ -102,11 +102,11 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <?php
-                    echo "<div style='background-color: lightskyblue; border-radius: 5%; font-family: Comic Sans MS;'>
-                                <div id='message' class='text-center'>
-                                  <strong> $msg </strong>
-                                </div>
-                           </div>";
+                        echo "<div style='background-color: lightskyblue; border-radius: 5%; font-family: Comic Sans MS;'>
+                                    <div id='message' class='text-center'>
+                                      <strong> $msg </strong>
+                                    </div>
+                               </div>";
                     ?>
                 </div>
                 <div class="col-md-2"></div>
@@ -191,18 +191,17 @@
                 
                 
                 <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10">
+                <div class="col-sm-12">
 
                         <table class="table-bordered w3-table-all w3-hoverable">
                             <thead>
                             <tr class="w3-green">
                                 <th>All <input type="checkbox" name="select_all" id="select_all"></th>
                                 <th>Serial</th>
-                                <th>ID</th>
+                                <th>Hobbies ID</th>
                                 <th>Name</th>
                                 <th>Hobbies</th>
-                                <th>Action Buttons</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <?php
@@ -217,32 +216,32 @@
                                             <td>$row->name</td>
                                             <td>$row->hobbies</td>
                                             <td>
-                                                        <a href='view.php?id=$row->id' title='View'>
-                                                            <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
-                                                                <span class='glyphicon glyphicon-eye-open'></span>
-                                                            </button>
-                                                        </a>
-                                                        <a href='edit.php?id=$row->id' title='Edit'>
-                                                            <button type='button' class='w3-btn w3-indigo w3-hover-indigo'>
-                                                                <i class='material-icons'>edit</i>
-                                                            </button>
-                                                        </a>
-                                                        <a href='trash.php?id=$row->id' title='Trash'>
-                                                                <button type='button' class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
-                                                                    <i class='material-icons'>delete_forever</i>
-                                                                </button>
-                                                            </a>
-                                                        <a href='delete.php?id=$row->id' title='Delete'>
-                                                                <button type='button' onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
-                                                                    <i class='material-icons'>content_cut</i>
-                                                                </button>
-                                                            </a>
-                                                            <a href='email.php?id=$row->id' title='Email'>
-                                                                <button type='button' class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
-                                                                    <i class='material-icons'>mail</i>
-                                                                </button>
-                                                            </a>
-                                                    </td>
+                                                <a href='view.php?id=$row->id' title='View'>
+                                                    <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
+                                                        <span class='glyphicon glyphicon-eye-open'></span>
+                                                    </button>
+                                                </a>
+                                                <a href='edit.php?id=$row->id' title='Edit'>
+                                                    <button type='button' class='w3-btn w3-indigo w3-hover-indigo'>
+                                                        <i class='material-icons'>edit</i>
+                                                    </button>
+                                                </a>
+                                                <a href='trash.php?id=$row->id' title='Trash'>
+                                                        <button type='button' class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
+                                                            <i class='material-icons'>delete_forever</i>
+                                                        </button>
+                                                    </a>
+                                                <a href='delete.php?id=$row->id' title='Delete'>
+                                                        <button type='button' onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
+                                                            <i class='material-icons'>content_cut</i>
+                                                        </button>
+                                                    </a>
+                                                    <a href='email.php?id=$row->id' title='Email'>
+                                                        <button type='button' class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
+                                                            <i class='material-icons'>mail</i>
+                                                        </button>
+                                                    </a>
+                                            </td>
                                         </tr>
                                     ";
                                     $serial++;
@@ -251,7 +250,6 @@
                             ?>
                         </table>
                     </div>
-                <div class="col-sm-1"></div>
             </div>
             </form>
 

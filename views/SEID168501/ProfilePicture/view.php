@@ -49,10 +49,11 @@
                     echo "
                         <ul class='w3-ul w3-card-4'>
                             <li class='w3-padding-64'>
-                                <img src='../../../images/shatkahon.jpg' class='w3-left w3-round w3-margin-right' style='width:120px; height: 150px'>
+                                <img src='Images/$singleData->profile_picture' class='w3-left w3-round w3-margin-right' style='width:150px; height: 150px'>
                                 <span class='w3-badge w3-red'>$singleData->id</span><br>
                                 <span class='w3-xxlarge'>$singleData->name</span><br>
-                                <span class='w3-large'>$singleData->profile_picture</span>
+                                <span class='w3-large' style='color: seagreen'>$singleData->profile_picture</span>
+                                <br><br><br>
                             </li>
                         </ul>
                     ";

@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group">
-            <label class="control-label col-sm-3" for="hobbies">Select City: </label>
+            <label class="control-label col-sm-3" for="city">Select City: </label>
             <div class="col-sm-9">
                 <select class="form-control" name="city">
                     <option value="Dhaka">Dhaka</option>

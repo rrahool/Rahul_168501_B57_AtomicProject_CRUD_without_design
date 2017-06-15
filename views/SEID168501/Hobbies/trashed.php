@@ -131,14 +131,18 @@
 
                             <table class="table-bordered w3-table-all w3-hoverable">
                                 <thead>
+
                                 <tr class="w3-green">
+
                                     <th>All <input type="checkbox" name="select_all" id="select_all"></th>
                                     <th>Serial</th>
-                                    <th>Hobbies ID</th>
-                                    <th>Hobbies</th>
+                                    <th>ID</th>
+                                    <th>Name</th>
                                     <th>Hobbies</th>
                                     <th>Action</th>
+
                                 </tr>
+
                                 </thead>
                                 <?php
                                     foreach($someData as $row){
@@ -185,6 +189,7 @@
 
                                 ?>
                             </table>
+
                         </div>
                 </div>
             </form>
