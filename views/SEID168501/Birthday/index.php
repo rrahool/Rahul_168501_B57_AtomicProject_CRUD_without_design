@@ -147,7 +147,7 @@
                         <form id="searchForm" action="index.php"  method="get">
                             <input type="text" value="" id="searchID" name="search" placeholder="Search..">
                             <input class="w3-check" type="checkbox" name="byName" checked="checked">
-                            <label> By Title</label>
+                            <label> By Name</label>
                             <input class="w3-check" type="checkbox" name="byDob" checked="checked">
                             <label> By Date of Birth</label>
                             <input hidden type="submit" class="btn-primary" value="search">
