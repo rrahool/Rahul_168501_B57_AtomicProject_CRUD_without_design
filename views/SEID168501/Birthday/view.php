@@ -66,7 +66,7 @@
         <div class="w3-row">
             <div class="col-sm-6">
                 <div class="w3-panel w3-blue w3-card-4">
-                    <h2> Single Book Information - Birthday </h2>
+                    <h2> Single Birthday Information - Birthday </h2>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
 //                                    <td>$singleData->name</td>
 //                                </tr>
 //                                <tr>
-//                                    <td>Author: </td>
+//                                    <td>Date of Birth: </td>
 //                                    <td>$singleData->dob</td>
 //                                </tr>
 //";

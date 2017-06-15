@@ -4,6 +4,7 @@
 
     use App\ProfilePicture\ProfilePicture;
     use App\Message\Message;
+    use App\Utility\Utility;
 
     $obj = new ProfilePicture();
 

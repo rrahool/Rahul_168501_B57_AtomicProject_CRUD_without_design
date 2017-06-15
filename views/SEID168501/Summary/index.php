@@ -4,6 +4,7 @@
 
     use App\Summary\Summary;
     use App\Message\Message;
+    use App\Utility\Utility;
 
     $obj = new Summary();
 

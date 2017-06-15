@@ -4,6 +4,7 @@
 
     use App\Hobbies\Hobbies;
     use App\Message\Message;
+    use App\Utility\Utility;
 
     $obj = new Hobbies();
 
