@@ -23,7 +23,7 @@
     <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body style="background-color: #E9EBEE">
 
     <?php echo "<div>  <div id='message'>  $msg </div>   </div>"; ?>
 

@@ -144,7 +144,6 @@
                     <div class="col-sm-5">
                         <div class="w3-panel">
                             <form id="searchForm" action="index.php"  method="get">
-
                                 <input type="text" value="" id="searchID" name="search" placeholder="Search..">
                                 <input class="w3-check" type="checkbox" name="byTitle" checked="checked">
                                 <label> By Title</label>
@@ -171,13 +170,13 @@
                             <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
                             <input type="button" id="trashMultipleButton" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Trash Multiple">
 
-                            <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
+                            <a href="email.php?list=1" class="w3-btn w3-indigo w3-hover-indigo" style="text-decoration: none">Email This List</a>
 
                             <div class="w3-dropdown-hover">
-                                <button type="button" class="w3-btn w3-brown w3-hover-brown">Download <i class="fa fa-download"></i></button>
+                                <button class="w3-btn w3-brown w3-hover-brown">Download <i class="fa fa-download"></i></button>
                                 <div class="w3-dropdown-content w3-bar-block w3-border">
-                                    <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As PDF</a>
-                                    <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
+                                    <a href="pdf.php" class="w3-bar-item w3-btn" style="text-decoration: none">As PDF</a>
+                                    <a href="xl.php" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
                                 </div>
                             </div>
 
@@ -211,27 +210,27 @@
                                                     <td>$row->book_title</td>
                                                     <td>$row->author_name</td>
                                                     <td>
-                                                        <a href='view.php?id=$row->id'>
+                                                        <a href='view.php?id=$row->id' title='View'>
                                                             <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
                                                                 <span class='glyphicon glyphicon-eye-open'></span>
                                                             </button>
                                                         </a>
-                                                        <a href='edit.php?id=$row->id'>
+                                                        <a href='edit.php?id=$row->id' title='Edit'>
                                                             <button type='button' class='w3-btn w3-indigo w3-hover-indigo'>
                                                                 <i class='material-icons'>edit</i>
                                                             </button>
                                                         </a>
-                                                        <a href='trash.php?id=$row->id'>
+                                                        <a href='trash.php?id=$row->id' title='Trash'>
                                                                 <button type='button' class='w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white'>
                                                                     <i class='material-icons'>delete_forever</i>
                                                                 </button>
                                                             </a>
-                                                        <a href='delete.php?id=$row->id'>
+                                                        <a href='delete.php?id=$row->id' title='Delete'>
                                                                 <button type='button' onclick='return confirm_delete()' class='w3-btn w3-red w3-hover-red'>
                                                                     <i class='material-icons'>content_cut</i>
                                                                 </button>
                                                             </a>
-                                                            <a href='email.php?id=$row->id'>
+                                                            <a href='email.php?id=$row->id' title='Email'>
                                                                 <button type='button' class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
                                                                     <i class='material-icons'>mail</i>
                                                                 </button>
@@ -291,7 +290,7 @@
                             Utility::redirect("index.php?Page=$pages");
 
                         if($page>1)
-                            echo "<a href='index.php?Page=$pageMinusOne'>" . "&laquo;" . "</a>";
+                            echo "<a href='index.php?Page=$pageMinusOne' title='Previous'>" . "&laquo;" . "</a>";
 
 
                         for($i=1;$i<=$pages;$i++)
@@ -301,7 +300,7 @@
 
                         }
                         if($page<$pages)
-                            echo "<a href='index.php?Page=$pagePlusOne'>" . "&raquo;" . "</a>";
+                            echo "<a href='index.php?Page=$pagePlusOne' title='Next'>" . "&raquo;" . "</a>";
 
                         ?>
 

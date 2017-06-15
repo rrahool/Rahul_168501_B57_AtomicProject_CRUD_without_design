@@ -8,7 +8,6 @@ use App\Utility\Utility;
 
 $obj = new ProfilePicture();
 
-Utility::dd($_FILES);
 
 $obj->setData($_POST);
 $singleData = $obj->view();
@@ -32,7 +31,6 @@ $_POST['profilePicture'] = $fileName;
 
 $obj->setData($_POST);
 
-Utility::dd($_POST);
 
 $obj->update();
 

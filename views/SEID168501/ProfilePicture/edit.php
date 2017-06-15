@@ -45,7 +45,7 @@
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
             <h2>ProfilePicture Edit Form</h2>
-            <form class="form-horizontal" action="update.php" method="post">
+            <form class="form-horizontal" action="update.php" method="post" enctype="multipart/form-data">
 
                 <!--///////////////////////////////////////////////////////-->
                 <input type="hidden" class="form-control" id="id" name="id" value="<?php echo $singleData->id ?>">

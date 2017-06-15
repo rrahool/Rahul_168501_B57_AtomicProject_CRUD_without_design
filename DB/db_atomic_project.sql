@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2017 at 11:09 PM
+-- Generation Time: Jun 14, 2017 at 10:09 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -62,21 +62,33 @@ CREATE TABLE `tbl_book_title` (
 
 INSERT INTO `tbl_book_title` (`id`, `book_title`, `author_name`, `book_image`, `is_trashed`) VALUES
 (4, 'à¦¹à¦¿à¦®à§ à¦¸à¦®à¦—à§à¦°', 'à¦¹à§à¦®à¦¾à§Ÿà§‚à¦¨ à¦†à¦¹à¦®à§‡à¦¦', 'himu_sm_1.jpg', 'No'),
-(5, 'Roll Number 13', 'Sumanta Aslam', '', 'No'),
-(6, 'Srikanta', 'Nimai Bhattacharjee', '', 'No'),
-(7, 'HabiJabi', 'Rahul Biswas', '', 'No'),
+(5, 'à¦°à§‹à¦² à¦¨à¦®à§à¦¬à¦° à§§à§©', 'à¦¸à§à¦®à¦¨à§à¦¤ à¦†à¦¸à¦²à¦¾à¦®', '', 'No'),
+(6, 'à¦¶à§à¦°à§€à¦•à¦¾à¦¨à§à¦¤', 'â€Žà¦¶à¦°à§Žà¦šà¦¨à§à¦¦à§à¦° à¦šà¦Ÿà§à¦Ÿà§‹à¦ªà¦¾à¦§à§à¦¯à¦¾à¦¯à¦¼', '', 'No'),
+(7, 'à¦¶à§‡à¦· à¦¬à¦¿à¦•à§‡à¦²à§‡à¦° à¦®à§‡à§Ÿà§‡', 'à¦œà¦¹à¦¿à¦° à¦°à¦¾à§Ÿà¦¹à¦¾à¦¨', '', 'No'),
 (8, 'Shatkahon', 'Shamaresh Mazumder', 'shatkahon.jpg', '2017-06-12 11:31:51'),
 (9, 'HabiJabi Series', 'Rahul Biswas', '', '2017-06-12 11:32:09'),
-(10, 'HabiJabi Series Part1', 'Rahul - Avinanda', '', 'No'),
+(10, 'à¦…à¦¸à¦®à¦¾à¦ªà§à¦¤', 'à¦¸à§à¦¨à§€à¦² à¦—à¦™à§à¦—à§‹à¦ªà¦¾à¦§à§à¦¯à¦¾à§Ÿ', '', 'No'),
 (11, 'Adventure of Sherlock Holmes', 'Sir Aurthur Canon Doyle', 'sherlock.jpg', '2017-06-12 11:32:29'),
 (12, 'Feluda', 'Satyajit Rai', '', '2017-06-12 11:31:58'),
-(13, 'kiiiiiiiaskdasjk', 'aiyooooooo', '', 'No'),
+(13, 'à¦¶à§‡à¦·à§‡à¦° à¦•à¦¬à¦¿à¦¤à¦¾', 'à¦°à¦¬à§€à¦¨à§à¦¦à§à¦°à¦¨à¦¾à¦¥ à¦ à¦¾à¦•à§à¦°', '', 'No'),
 (14, 'à¦¦à¦¸à§à¦¯à¦¿ à¦•\'à¦œà¦¨', 'à¦®à§à¦¹à¦®à§à¦®à¦¦ à¦œà¦¾à¦«à¦° à¦‡à¦•à¦¬à¦¾à¦²', '', 'No'),
 (15, 'à¦œà§à¦¯à§‹à§Žà¦¸à§à¦¨à¦¾à§Ÿ à¦¬à¦°à§à¦·à¦¾à¦° à¦®à§‡à¦˜', 'à¦¸à¦®à¦°à§‡à¦¶ à¦®à¦œà§à¦®à¦¦à¦¾à¦°', '', 'No'),
 (16, 'à¦­à¦¾à¦²à§‹à¦¬à¦¾à¦¸à¦¾', 'à¦¶à§€à¦°à§à¦·à§‡à¦¨à§à¦¦à§ à¦®à§à¦–à§‹à¦ªà¦¾à¦§à§à¦¯à¦¾à§Ÿ', '', 'No'),
 (17, 'à¦…à¦ªà§à¦° à¦¸à¦‚à¦¸à¦¾à¦°', 'à¦¸à¦¤à§à¦¯à¦œà¦¿à§Ž à¦°à¦¾à§Ÿ', '', 'No'),
 (18, 'à¦¹à§€à¦°à§‡ à¦¬à¦¸à¦¾à¦¨à§‹ à¦¸à§‹à¦¨à¦¾à¦° à¦«à§à¦²', 'à¦¸à¦®à¦°à§‡à¦¶ à¦®à¦œà§à¦®à¦¦à¦¾à¦°', '', 'No'),
-(20, 'yjdydghx', 'srtsrfr4', '', 'No');
+(20, 'yjdydghx', 'srtsrfr4', '', 'No'),
+(21, 'dxzgfg', 'rsgtsrzgtr', '', '2017-06-14 12:40:05'),
+(22, 'wstrrws', 'rtewsrtf', '', '2017-06-14 12:40:05'),
+(23, 'rtgrtg', 'ertew', '', '2017-06-14 12:40:05'),
+(24, 'ewtfwerst', 'etfrrwsetf', '', '2017-06-14 12:40:26'),
+(25, 'erwterwt', 'erwterwtf', '', '2017-06-14 12:40:38'),
+(26, 'ewrewr', 'hgffh', '', '2017-06-14 12:40:38'),
+(27, 'we5rw', 'sterws', '', '2017-06-14 12:40:38'),
+(28, 'trutry', 'rte4ert', '', '2017-06-14 12:40:56'),
+(29, 'et5ert', 'eryt5ert', '', '2017-06-14 12:40:56'),
+(30, 'erytert', 'yruhryth', '', '2017-06-14 12:40:56'),
+(31, 'rter', 'gfrrt', '', 'No'),
+(32, 'rtgr', 'rstgr', '', 'No');
 
 -- --------------------------------------------------------
 
@@ -166,7 +178,8 @@ INSERT INTO `tbl_profile_pictures` (`id`, `name`, `profile_picture`) VALUES
 (5, 'njdjasbfbhsdjfb', '1496342851t1.PNG'),
 (6, 'teafdxg', '1496343047filelist.xml'),
 (7, 'something', '1496343184love-quotes-for-her-wallpaper - Copy.bmp'),
-(8, 'object', '1496462552avatar-1.png');
+(8, 'object', '1496462552avatar-1.png'),
+(9, 'jhggvhvv', '1497427085summaryoforganization_create.PNG');
 
 -- --------------------------------------------------------
 
@@ -247,7 +260,7 @@ ALTER TABLE `tbl_birthday`
 -- AUTO_INCREMENT for table `tbl_book_title`
 --
 ALTER TABLE `tbl_book_title`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 --
 -- AUTO_INCREMENT for table `tbl_cities`
 --
@@ -267,7 +280,7 @@ ALTER TABLE `tbl_hobbies`
 -- AUTO_INCREMENT for table `tbl_profile_pictures`
 --
 ALTER TABLE `tbl_profile_pictures`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT for table `tbl_summary`
 --

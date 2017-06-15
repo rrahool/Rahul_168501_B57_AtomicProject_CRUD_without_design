@@ -20,8 +20,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
-    <script src="../../../resources/bootstrap/js/jquery.js"></script>
     <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- specifically used for Datepicker, block1 of 2 start -->
+
+    <link rel="stylesheet" href="../../../resources/bootstrap/css/jquery-ui.css">
+    <script src="../../../resources/bootstrap/js/jquery-1.12.4.js"></script>
+    <script src="../../../resources/bootstrap/js/jquery-ui.js"></script>
+
+    <!-- specifically used for Datepicker, block1 of 2 end -->
+
+
     <style>
         div.container{
             margin-top: 150px;
@@ -31,6 +41,8 @@
             border-radius: 10px;
         }
     </style>
+
+
 </head>
 <body>
 
@@ -49,7 +61,7 @@
         <div class="form-group">
             <label class="control-label col-sm-3" for="dob">Date of Birth: </label>
             <div class="col-sm-9">
-                <input type="date" class="form-control" id="dob" name="dob">
+                <input type="text" id="datepicker" class="form-control" name="dob">
             </div>
         </div>
 
@@ -62,7 +74,7 @@
     </div>
     <div class="col-lg-3"></div>
 </div>
-<script src="../../../resources/bootstrap/js/jquery.js"></script>
+
 
 <script>
 
@@ -80,6 +92,24 @@
         }
     )
 </script>
+
+
+<!-- specifically used for Datepicker, block1 of 2 start -->
+
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker({
+            dateFormat: 'yy-mm-dd',
+            changeMonth: true,
+            changeYear: true
+        });
+    } );
+</script>
+
+<!-- specifically used for Datepicker, block1 of 2 end -->
+
+
+
 </body>
 </html>
 

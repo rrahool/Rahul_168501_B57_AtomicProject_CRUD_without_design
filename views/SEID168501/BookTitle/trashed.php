@@ -112,13 +112,13 @@
                         <input type="button" id="deleteMultipleButton" class="w3-btn w3-red w3-hover-red" value="Delete Multiple">
                         <input type="button" id="recoverMultipleButton" class="w3-btn w3-orange w3-hover-orange w3-text-white w3-hover-text-white" value="Recover Multiple">
 
-                        <input type="button" class="w3-btn w3-indigo w3-hover-indigo" value="Email This List">
+                        <a href="trashMail.php?list=1" class="w3-btn w3-indigo w3-hover-indigo" style="text-decoration: none">Email This List</a>
 
                         <div class="w3-dropdown-hover">
                             <button type="button" class="w3-btn w3-brown w3-hover-brown">Download <i class="fa fa-download"></i></button>
                             <div class="w3-dropdown-content w3-bar-block w3-border">
-                                <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As PDF</a>
-                                <a href="#" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
+                                <a href="trashPdf.php" class="w3-bar-item w3-btn" style="text-decoration: none">As PDF</a>
+                                <a href="trashXl.php" class="w3-bar-item w3-btn" style="text-decoration: none">As Excel</a>
                             </div>
                         </div>
 
@@ -152,25 +152,30 @@
                                                 <td>$row->book_title</td>
                                                 <td>$row->author_name</td>
                                                 <td>
-                                                    <a href='view.php?id=$row->id'>
+                                                    <a href='view.php?id=$row->id' title='View'>
                                                         <button type='button' class='w3-btn w3-blue w3-hover-blue' style='font-size: 20px;'>
                                                             <span class='glyphicon glyphicon-eye-open'></span>
                                                         </button>
                                                     </a>
-                                                    <a href='edit.php?id=$row->id'>
+                                                    <a href='edit.php?id=$row->id' title='Edit'>
                                                         <button type='button' class='w3-btn w3-indigo w3-hover-indigo'>
                                                             <i class='material-icons'>edit</i>
                                                         </button>
                                                     </a>
-                                                    <a href='recover.php?id=$row->id'>
+                                                    <a href='recover.php?id=$row->id' title='Recover'>
                                                             <button type='button' class='w3-btn w3-teal w3-hover-teal'>
                                                                 <i class='material-icons'>restore</i>
                                                             </button>
                                                         </a>
-                                                    <a href='delete.php?id=$row->id'>
+                                                    <a href='delete.php?id=$row->id' title='Delete'>
                                                             <button onclick='return confirm_delete()' type='button' class='w3-btn w3-red w3-hover-red' >
                                                                 <i class='material-icons'>content_cut</i>
                                                             </button>
+                                                    </a>
+                                                    <a href='trashMail.php?id=$row->id' title='Email'>
+                                                                <button type='button' class='w3-btn w3-teal w3-hover-teal w3-text-white w3-hover-text-white'>
+                                                                    <i class='material-icons'>mail</i>
+                                                                </button>
                                                     </a>
                                                 </td>
                                             </tr>

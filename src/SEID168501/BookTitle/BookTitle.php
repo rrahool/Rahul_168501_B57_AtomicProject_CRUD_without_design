@@ -280,6 +280,18 @@ class BookTitle extends Database
     }// end of trashedPaginator()
 
 
+    public function trashList(){
+
+        $sql = "Select * from tbl_book_title where is_trashed <> 'No'";
+
+        $STH = $this->DBH->query($sql);
+
+        $STH->setFetchMode(PDO::FETCH_OBJ);
+
+        return $STH->fetchAll();
+    } // end of trashList()
+
+
 
 
 } //end of BookTitle Class
