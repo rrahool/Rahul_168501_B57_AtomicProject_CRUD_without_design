@@ -96,7 +96,7 @@
 </head>
 <body style="background-color: #E9EBEE">
 
-<div class="container">
+<div class="container" >
 
     <div class="row">
         <div class="col-md-2"></div>
@@ -312,7 +312,6 @@
     <!--  ######################## pagination code block#2 of 2 end ###################################### -->
 
 </div>
-
 
 <script>
 

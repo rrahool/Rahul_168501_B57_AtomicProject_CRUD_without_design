@@ -13,81 +13,178 @@
 
 ?>
 
+
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en-US">
+
 <head>
-    <title>City</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../../resources/bootstrap/css/bootstrap.min.css">
+
+
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../../resources/create_pages/city/main.css" type="text/css" />
+    <link rel="stylesheet" href="../../../resources/create_pages/city/select-boxes.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
     <script src="../../../resources/bootstrap/js/jquery.js"></script>
-    <script src="../../../resources/bootstrap/js/bootstrap.min.js"></script>
-    <style>
-        div.container{
-            margin-top: 150px;
-        }
-        div.col-lg-6{
-            background-color: aliceblue;
-            border-radius: 10px;
-        }
-    </style>
+    <!-- Document Title
+    ============================================= -->
+    <title>Add City</title>
+
+
 </head>
-<body>
 
-<div class="container">
-    <div class="col-lg-3"></div>
-    <div class="col-lg-6">
-    <h2>City Form</h2>
-    <form class="form-horizontal" action="store.php" method="post">
-        <div class="form-group">
-            <label class="control-label col-sm-3" for="name">Name: </label>
-            <div class="col-sm-9">
-                <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+<body class="stretched">
+
+<!-- Document Wrapper
+============================================= -->
+<div id="wrapper" class="clearfix">
+
+    <!-- Header
+    ============================================= -->
+    <header id="header" class="transparent-header page-section dark">
+
+        <div id="header-wrap">
+
+            <div class="container clearfix">
+
+                <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+                <!-- Logo
+                ============================================= -->
+                <div id="logo">
+                    <br>
+                    <h1>CITY</h1>
+                </div><!-- #logo end -->
+
+                <!-- Primary Navigation
+                ============================================= -->
+                <nav id="primary-menu">
+
+                    <ul class="one-page-menu">
+                        <li class="current"><a href="#" data-href="#header"><div>Home</div></a></li>
+                        <li><a href="#" data-href="#section-features"><div>Features</div></a></li>
+                        <li><a href="#" data-href="#section-pricing"><div>Pricing</div></a></li>
+                        <li><a href="#" data-href="#section-testimonials"><div>Testimonials</div></a></li>
+                        <li><a href="#" data-href="#section-specs"><div>Specifications</div></a></li>
+                        <li><a href="#" data-href="#section-buy"><div>Buy Now</div></a></li>
+                    </ul>
+
+                </nav><!-- #primary-menu end -->
+
             </div>
+
         </div>
 
-        <div class="form-group">
-            <label class="control-label col-sm-3" for="city">Select City: </label>
-            <div class="col-sm-9">
-                <select class="form-control" name="city">
-                    <option value="Dhaka">Dhaka</option>
-                    <option value="Chittagong">Chittagong</option>
-                    <option value="Khulna">Khulna</option>
-                    <option value="Sylhet">Sylhet</option>
-                    <option value="Rajshahi">Rajshahi</option>
-                    <option value="Barisal">Barisal</option>
-                    <option value="Rangpur">Rangpur</option>
-                </select>
+    </header><!-- #header end -->
+
+    <section id="slider" style="background: url('../../../images/landing2.jpg') center; overflow: visible;" data-height-lg="500" data-height-md="500" data-height-sm="600" data-height-xs="600" data-height-xxs="600">
+        <div class="container clearfix">
+
+            <form action="store.php" method="post" role="form" class="landing-wide-form landing-form-overlay dark nobottommargin clearfix" style="padding-bottom: 100px;">
+                <div class="heading-block nobottommargin nobottomborder" style="text-align: center">
+                    <h2>Select Your City</h2>
+                    <span>Type Your Name & Select City</span>
+                </div>
+                <div class="line" style="margin: 20px 0 30px;"></div>
+                <div class="col_full">
+                    <input type="text" name="name" class="form-control input-lg not-dark" value="" placeholder="Your Name*">
+                </div>
+                <div class="col_full">
+                    <select class="form-control" name="city" style="background: white; height: 50px;">
+                        <option value="Dhaka">DHAKA</option>
+                        <option value="Chittagong">CHITTAGONG</option>
+                        <option value="Khulna">KHULNA</option>
+                        <option value="Sylhet">SYLHET</option>
+                        <option value="Rajshahi">RAJSHAHI</option>
+                        <option value="Barisal">BARISHAL</option>
+                        <option value="Rangpur">RANGPUR</option>
+                    </select>
+                </div>
+
+                <div class="col_full nobottommargin">
+                    <button class="btn btn-lg btn-danger btn-block nomargin" value="submit" type="submit" style="">SUBMIT</button>
+                </div>
+
+                <div class="clearfix"></div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Content
+    ============================================= -->
+    <section id="content" style="overflow: visible;">
+
+        <div class="content-wrap">
+
+            <div class="promo promo-dark promo-full landing-promo header-stick">
+                <div class="container clearfix">
+                    <h3>Beautiful Landing Page designs waiting for you inside <i class="icon-circle-arrow-right" style="position:relative;top:2px;"></i></h3>
+                    <span>You'll love our beautiful &amp; interactive builder that makes your build process easier &amp; fun.</span>
+                </div>
             </div>
+
         </div>
 
-        <div class="form-group">
-            <div class="col-sm-offset-3 col-sm-9">
-                <button type="submit" class="btn btn-default">Submit</button>
-            </div>
-        </div>
-    </form>
-    </div>
-    <div class="col-lg-3"></div>
+    </section><!-- #content end -->
+
 </div>
-<script src="../../../resources/bootstrap/js/jquery.js"></script>
+
+
+
+
+
+<!-- Go To Top
+============================================= -->
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<!-- External JavaScripts
+============================================= -->
+<script type="text/javascript" src="../../../resources/create_pages/city/jquery.js"></script>
+
+<!-- Footer Scripts
+============================================= -->
+<script type="text/javascript" src="../../../resources/create_pages/city/functions.js"></script>
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-23255544-12', 'auto');
+    ga('send', 'pageview');
+</script><script>jQuery(document).ready(function(e){e("#primary-menu > ul li").find('.new-badge').children("div").append('<span class="label label-danger" style="display:inline-block;margin-left:8px;position:relative;top:-1px;text-transform:none;">New</span>')});</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"839484a19a","applicationID":"5289971","transactionName":"ZQEDZxZUD0FZVkxfX1xLNEENGglGVVkXVVFcEgBAS1kAXFxcVlEdB0oRWxQ=","queueTime":0,"applicationTime":0,"atts":"SUYAEV5OHE8=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
 
 <script>
 
 
     jQuery(
 
-        function($) {
-            $('#message').fadeOut (550);
-            $('#message').fadeIn (550);
-            $('#message').fadeOut (550);
-            $('#message').fadeIn (550);
-            $('#message').fadeOut (550);
-            $('#message').fadeIn (550);
-            $('#message').fadeOut (550);
-        }
+            function($) {
+                $('#message').fadeOut (550);
+                $('#message').fadeIn (550);
+                $('#message').fadeOut (550);
+                $('#message').fadeIn (550);
+                $('#message').fadeOut (550);
+                $('#message').fadeIn (550);
+                $('#message').fadeOut (550);
+            }
     )
 </script>
-</body>
-</html>
 
+
+</body>
+
+
+</html>
